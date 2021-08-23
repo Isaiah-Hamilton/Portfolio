@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 1024 1024">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="PencilOnly" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<path d="M469.193+979.793L126.736+782.075C103.094+768.425+83.9287+735.23+83.9287+707.931L83.9287+312.495C83.9287+285.196+103.094+252.001+126.736+238.351L469.193+40.6337C492.835+26.9841+531.165+26.9841+554.807+40.6337L897.264+238.351C920.906+252.001+940.071+285.196+940.071+312.496L940.071+707.931C940.071+735.23+920.906+768.425+897.264+782.075L554.807+979.793C531.165+993.442+492.835+993.442+469.193+979.793Z" opacity="1" fill="#242329"/>
+<path d="M478.249+277.095L545.751+277.095C554.03+277.095+560.742+283.447+560.742+291.282L560.742+732.718C560.742+740.553+554.03+746.905+545.751+746.905L478.249+746.905C469.97+746.905+463.258+740.553+463.258+732.718L463.258+291.282C463.258+283.447+469.97+277.095+478.249+277.095Z" opacity="1" fill="#ffffff"/>
+</g>
+</svg>

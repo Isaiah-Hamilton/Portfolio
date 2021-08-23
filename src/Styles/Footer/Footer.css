@@ -1,0 +1,67 @@
+@import url(../../index.css);
+
+.footer {
+  background-color: #6e57e0;
+  color: #fff;
+}
+
+.footer__container {
+  row-gap: 3.5rem;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+
+.footer__link {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__socials {
+  width: fit-content;
+  margin: auto;
+}
+
+.footer__socials-div {
+  transition: 0.3s;
+  float: left;
+  font-size: 1.25rem;
+  margin-right: var(--mb-0-75);
+  margin-left: var(--mb-0-75);
+}
+
+.footer__socials-div:hover {
+  color: var(--first-color);
+  transform: translateY(-5px);
+}
+
+.footer__copy {
+  margin-top: var(--mb-0-25);
+  font-size: var(--small-font-size);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 30px;
+  }
+
+  .footer__subtitle {
+    font-size: 18px;
+  }
+}

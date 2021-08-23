@@ -1,0 +1,103 @@
+@import url(../../index.css);
+
+.clear__float {
+  clear: left;
+}
+
+.skills__container {
+  width: 295px;
+  margin: 0 auto;
+}
+
+.dev__icons {
+  color: #868e96;
+  padding-left: 0;
+  list-style: none;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.software-skill-inline > i {
+  color: #868e96;
+}
+
+.software-skill-inline > img {
+  width: 35px;
+}
+
+.software-skill-inline > p {
+  color: #868e96;
+  font-size: 10px;
+}
+
+.skills__img {
+  display: none;
+}
+
+/*===== Media Queries =====*/
+
+/*===== Small Device =====*/
+@media (max-width: 350px) {
+  .skills__container {
+    width: fit-content;
+  }
+
+  .software-skills-main-div {
+    width: fit-content;
+  }
+
+  .dev-icons {
+    width: 280px;
+  }
+
+  .software-skill-inline {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .software-skill-inline i {
+    font-size: 25px;
+  }
+}
+
+/*===== medium Device =====*/
+@media (min-width: 568px) {
+  .skills__container {
+    width: fit-content;
+  }
+
+  .software-skill-inline {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  .skills__img {
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills__img {
+    margin-right: 0rem;
+  }
+}
