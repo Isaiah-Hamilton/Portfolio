@@ -13,7 +13,7 @@ function Skills() {
           <div className="skills__img">
             <img
               src={SkillsImg}
-              alt="A vector drawing of a person looking at a portfolio website"
+              alt="A vector drawing of a person looking at a portfolio website."
             />
           </div>
           <div className="software-skills-main-div">

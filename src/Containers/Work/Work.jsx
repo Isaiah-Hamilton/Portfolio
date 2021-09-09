@@ -21,7 +21,7 @@ function Work() {
                 >
                   <img
                     src={FireFoxNewTab}
-                    alt="a representation of my FireFox New Tab Clone projects"
+                    alt="a representation of my FireFox New Tab Clone projects."
                   />
                 </a>
               </div>
@@ -45,7 +45,7 @@ function Work() {
                 >
                   <img
                     src={Portfolio}
-                    alt="a representation of my FireFox New Tab Clone projects"
+                    alt="a representation of my FireFox New Tab Clone projects."
                   />
                 </a>
               </div>

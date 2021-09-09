@@ -13,7 +13,7 @@ function About() {
         <div className="about__container container grid">
           <img
             src={ABoutImg}
-            alt="An image of Isaiah Hamilton on his computer looking up."
+            alt="Im looking up from my computer."
             className="about__img"
           />
 
