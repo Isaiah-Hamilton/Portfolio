@@ -11,7 +11,10 @@ function Skills() {
         <h2 className="section-title">Skills</h2>
         <div className="skills__container container">
           <div className="skills__img">
-            <img src={SkillsImg} alt="" />
+            <img
+              src={SkillsImg}
+              alt="A vector drawing of a person looking at a portfolio website"
+            />
           </div>
           <div className="software-skills-main-div">
             <ul className="dev-icons">

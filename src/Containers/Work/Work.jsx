@@ -19,7 +19,10 @@ function Work() {
                   target="_blank"
                   className="img-link"
                 >
-                  <img src={FireFoxNewTab} alt="" />
+                  <img
+                    src={FireFoxNewTab}
+                    alt="a representation of my FireFox New Tab Clone projects"
+                  />
                 </a>
               </div>
               <div className="work-text-details">
@@ -40,7 +43,10 @@ function Work() {
                   target="_blank"
                   className="img-link"
                 >
-                  <img src={Portfolio} alt="" />
+                  <img
+                    src={Portfolio}
+                    alt="a representation of my FireFox New Tab Clone projects"
+                  />
                 </a>
               </div>
               <div className="work-text-details">

@@ -53,14 +53,18 @@ function App() {
             </nav>
           </div>
         </header>
-        <HomePage />
-        <AboutPage />
-        <SkillsPage />
-        <WorkPage />
-        <OtherPage />
-        <ContactPage />
-        <div className="spacer layer1"></div>
-        <FooterPage />
+        <main className="app-main">
+          <article itemScope itemType="https://schema.org/articleBody" className="app-main__article">
+            <HomePage />
+            <AboutPage />
+            <SkillsPage />
+            <WorkPage />
+            <OtherPage />
+            <ContactPage />
+            <div className="spacer layer1"></div>
+            <FooterPage />
+          </article>
+        </main>
       </div>
     </ThemeProvider>
   );

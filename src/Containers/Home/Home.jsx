@@ -65,6 +65,7 @@ function Home() {
                     x="10"
                     y="10"
                     href={Headshot}
+                    alt="An image of Isaiah Hamilton, the creator of this site."
                   />
                 </g>
               </svg>
