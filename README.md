@@ -57,7 +57,7 @@ git clone https://github.com/Isaiah-Hamilton/Portfolio.git
 now you need to install the prerequisites
 * yarn
   ```sh
-  yarn add
+  yarn install
   ```
 
 <!-- CONTRIBUTING -->
