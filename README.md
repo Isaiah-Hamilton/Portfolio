@@ -1,34 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="top"></div>
 
+<div align="center">
+  
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url]
+</div>
+
+<br />
+<div align="center">
+
+  <h3 align="center">Portfolio</h3>
+
+  <p align="center">
+    An awesome Portfolio!
+    <br />
+    <a href="https://isaiah-hamilton.com">View Demo</a>
+    ·
+    <a href="https://github.com/Isaiah-Hamilton/Portfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Isaiah-Hamilton/Portfolio/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+### Portfolio
+
+There are many great portfolio's templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one.
+
+Of course, no one portfolio will serve all people since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this portfolio!
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [Chakra-ui](https://chakra-ui.com/)
+* [Framer](https://www.framer.com/motion/)
+
+<p align="left"><a href="#top">back to top</a></p>
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+to get started you first need to have [yarn](https://yarnpkg.com/) installed, then you can clone the repo.
+```ssh
+git clone https://github.com/Isaiah-Hamilton/Portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+now you need to install the prerequisites
+* yarn
+  ```sh
+  yarn add
+  ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<!-- CONTRIBUTING -->
+## Contributing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Learn More
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p align="left"><a href="#top">back to top</a></p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<!-- LICENSE -->
+## License
 
-## Deploy on Vercel
+Distributed under the MIT License.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- CONTACT -->
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Isaiah hamilton - [@isaiah7hamilton](https://twitter.com/isaiah7hamilton) - isaiah7hamilton@gmail.com
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Vercel](https://vercel.com/)
+
+<p align="left"><a href="#top">back to top</a></p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/Isaiah-Hamilton/Portfolio/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
