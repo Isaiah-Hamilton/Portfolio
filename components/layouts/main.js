@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
         <Box as='main' pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Isaiah's homepage" />
+                <meta name="description" content="Isaiah Hamilton is a creative thinker and Full-Stack Developer with experience in website design, front-end development, back-end development, and user interface design.169 characters" />
                 <meta name="author" content="Isaiah Hamilton" />
                 <meta name="author" content="Isaiah-Hamilton" />
                 <meta name="author" content="Isaiah7Hamilton" />
@@ -19,10 +19,10 @@ const Main = ({ children, router }) => {
                 <meta name="twitter:site" content="@Isaiah7Hamilton" />
                 <meta name="twitter:creator" content="@Isaiah7Hamilton" />
                 <meta name="twitter:image" content="/card.png" />
-                <meta property="og:site_name" content="Isaiah Hamilton's Homepage" />
+                <meta property="og:site_name" content="Isaiah Hamilton | Full-Stack Developer" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="/card.png" />
-                <title>Isaiah hamilton - Homepage</title>
+                <title>Isaiah Hamilton | Full-Stack Developer</title>
             </Head>
             <Script src="https://kit.fontawesome.com/a223b19e18.js" crossorigin="anonymous"></Script>
 
