@@ -23,7 +23,7 @@ const Page = () => {
           Hello, I&apos;m a full-stack developer based in Atlanta.
         </Box>
 
-        <Box display={{md:'flex'}}>
+        <Box display={{ md: 'flex' }} mb={10}>
           <Box flexGrow={1}>
             <Heading as='h2' variant='page-tittle'>
               Isaiah Hamilton
@@ -51,17 +51,16 @@ const Page = () => {
             />
           </Box>
         </Box>
-        <Section delay={0.1}>
+        <Section delay={0.1} mt={10}>
           <Heading as="h3" variant="section-title">
             About Me
           </Heading>
           <Paragraph>
             I&apos;m a {new Date().getFullYear() - 2006}{' '}
-            year old full-stack developer based in Atlanta
-            with a passion for building digital services/stuff.
-            I have a knack for all things launching products,
-            from planning and designing all the way to solving real-life problems with code.
-            When not online, I love skateboarding and hanging out with friends.
+            year old full stack developer based in Atlanta.
+            I have strong passion a for coding and building things that impact people&apos;s day to day lives and to make them better.
+            I am interested in Typescript, Next.js, Deno, Supabase, and building consumer apps + developer tools.
+            In my free time, you can see skating, gaming, exploring, and talking to new people.
           </Paragraph>
           <Box align="center" my={6}>
             <NextLink href="/work">
