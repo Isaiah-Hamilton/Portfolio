@@ -13,10 +13,6 @@ const Skills = () => {
       <Heading as="h3" variant="section-title">
         Skills
       </Heading>
-      <Paragraph>
-        I have a wide range of skills, ranging from frontend development to
-        backend development.
-      </Paragraph>
       <SimpleGrid m={'auto'} width={'fit-content'} columns={[1, 2, 3, 4]} spacingX={16}>
         <Box>
           <Image src='/images/html.svg' width={16} height={16} my={6} alt='html' />
@@ -55,21 +51,6 @@ const Skills = () => {
           <Image src='/images/nodejs.svg' width={16} height={16} my={6} alt='node-js' />
         </Box>
       </SimpleGrid>
-      <Box>
-        <Box display={'block'} textAlign={'center'}>{new Date().getFullYear() - 2020}</Box>
-        <Box display={'block'} textAlign={'center'}>
-          Years <br /> experience
-        </Box>
-      </Box>
-      <Paragraph>
-        ⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications
-      </Paragraph>
-      <Paragraph>
-        ⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks
-      </Paragraph>
-      <Paragraph>
-        ⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean
-      </Paragraph>
     </Section>
   )
 }

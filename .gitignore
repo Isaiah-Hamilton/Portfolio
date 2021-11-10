@@ -30,8 +30,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-/pages/work/
-/pages/work.js
-/pages/posts/
-/pages/posts.js
