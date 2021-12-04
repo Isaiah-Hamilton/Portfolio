@@ -25,15 +25,15 @@ const About = () => {
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
-              <a className="mx-2" href="#" aria-label="Linkedin">
+              <a className="mx-2" href="https://www.linkedin.com/in/isaiah-hamilton-093361209/" aria-label="Linkedin">
                 <IoLogoLinkedin color="#1F2937" size={30} />
               </a>
 
-              <a className="mx-2" href="#" aria-label="GitHub">
+              <a className="mx-2" href="https://github.com/Isaiah-Hamilton" aria-label="GitHub">
                 <IoLogoGithub color="#1F2937" size={30} />
               </a>
 
-              <a className="mx-2" href="#" aria-label="Twitter">
+              <a className="mx-2" href="https://twitter.com/Isaiah7Hamilton" aria-label="Twitter">
                 <IoLogoTwitter color="#1F2937" size={30} />
               </a>
             </div>
