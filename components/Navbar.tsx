@@ -16,7 +16,7 @@ const Navbar = (props: Props) => {
       <div className="flex items-center justify-between">
         <div>
           <Link href="/">
-            <a className="text-2xl font-semibold text-gray-800 transition-colors duration-200 transform dark:text-white">
+            <a className="text-2xl font-semibold transition-colors duration-200 transform">
               Isaiah
               <span className="ml-1 font-normal">Hamilton</span>
             </a>
@@ -41,16 +41,16 @@ const Navbar = (props: Props) => {
 
       <div className="items-center md:flex">
         <div className="flex flex-col md:flex-row md:mx-6">
-          <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
+          <a className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
             Home
           </a>
-          <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
+          <a className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
             Shop
           </a>
-          <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
+          <a className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
             Contact
           </a>
-          <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
+          <a className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
             About
           </a>
         </div>
