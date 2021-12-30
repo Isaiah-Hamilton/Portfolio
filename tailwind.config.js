@@ -38,6 +38,9 @@ module.exports = {
           900: '#0f0f0f',
         },
       },
+      boxShadow: {
+        xl: '0 10px 10px -8px rgba(0,0,0,.22)',
+      },
     },
   },
   plugins: [],

@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
+import Footer from './Footer'
 import Navbar from './Navbar'
 
 type Props = {
   hideHeader?: boolean
+  hideFooter?: boolean
   children: React.ReactNode
 }
 
 const DefaultLayout = (props: Props) => {
-  const { hideHeader = false, children } = props
+  const { hideHeader = false, hideFooter = false, children } = props
   const [darkMode, setDarkMode] = useState<boolean>(true)
 
   useEffect(() => {
@@ -24,10 +26,13 @@ const DefaultLayout = (props: Props) => {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 text-gray-700 dark:text-white h-screen pt-10 px-16">
-      {!hideHeader && <Navbar darkMode={darkMode} updateTheme={updateTheme} />}
-      <main>{children}</main>
-    </div>
+    <>
+      <div className="bg-white dark:bg-[#222222] text-gray-600 dark:text-white h-screen pt-10 px-16">
+        {!hideHeader && <Navbar darkMode={darkMode} updateTheme={updateTheme} />}
+        <main>{children}</main>
+      </div>
+      {!hideFooter && <Footer />}
+    </>
   )
 }
 
