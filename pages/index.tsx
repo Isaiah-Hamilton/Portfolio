@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import Layout from '../components/Layouts'
 import Hero from '../components/Hero'
+import Portfolio from '../components/Portfolio'
 
 const Home: NextPage = () => {
   return (
-    <Layout hideFooter>
+    <Layout>
       <Hero />
+      <Portfolio />
     </Layout>
   )
 }

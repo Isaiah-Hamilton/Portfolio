@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Portfolio",
+    "image": "https://dummyimage.com/720x600",
+    "description": "Here are some of my projects that I&apos;ve worked on.",
+    "github": "https://github.com/isaiah7hamilton/portfolio",
+    "link": "/",
+    "language": "Nextjs · Typescript · Tailwind"
+  },
+  {
+    "title": "Supashare",
+    "image": "/supashare.png",
+    "description": "The simplest way to send big ideas around the world, and discover new creative work while your at it.",
+    "github": "https://github.com/isaiah7hamilton/portfolio",
+    "link": "https://supashare.vercel.app",
+    "language": "Nextjs · Typescript · Tailwind"
+  },
+  {
+    "title": "Custodi",
+    "image": "/custodi.png",
+    "description": "The open source Sentry alternative.",
+    "github": "https://github.com/isaiah7hamilton/portfolio",
+    "link": "https://custodi-six.vercel.app",
+    "language": "Nextjs · Typescript · Tailwind · Supabase"
+  }
+]
