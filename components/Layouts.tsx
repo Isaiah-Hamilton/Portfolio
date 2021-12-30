@@ -30,8 +30,8 @@ const DefaultLayout = (props: Props) => {
       <div className="bg-white dark:bg-[#222222] text-gray-600 dark:text-white h-screen pt-10 px-16">
         {!hideHeader && <Navbar darkMode={darkMode} updateTheme={updateTheme} />}
         <main>{children}</main>
+        {!hideFooter && <Footer />}
       </div>
-      {!hideFooter && <Footer />}
     </>
   )
 }
