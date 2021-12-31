@@ -16,7 +16,7 @@ export const Card = (props: Props) => {
 
   return (
     <div className="flex flex-col overflow-hidden rounded-lg shadow-lg transition duration-300 ease-in-out hover:-translate-y-6">
-      <div className="flex-shrink-0 transition duration-300 ease-in-out hover:opacity-30">
+      <div className="flex-shrink-0">
         <Link href={link}>
           <a>
             <img className="object-cover w-full h-48" src={image} alt="" />
@@ -52,6 +52,7 @@ const Portfolio = () => {
             {portfolio.map((portfolio: any) => {
               return (
                 <Card
+                  key={portfolio.id}
                   image={portfolio.image}
                   title={portfolio.title}
                   description={portfolio.description}
