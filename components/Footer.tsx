@@ -3,7 +3,7 @@ import data from '../data/data.json'
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-between py-4 sm:flex-row dark:bg-[#222222] border-t-2 border-[#f2f2f2] dark:border-[#333333] -mx-16 px-16">
+    <div className="flex flex-col items-center justify-between py-4 sm:flex-row dark:bg-[#252525] border-t-2 border-[#f2f2f2] dark:border-[#333333] -mx-16 px-16">
       <div className="flex -mx-2">
         <Link href={data.url.twitter}>
           <a className="mx-2 text-[#666666] dark:text-gray-300 hover:text-brand-400 dark:hover:text-brand-500">
