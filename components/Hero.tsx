@@ -20,12 +20,20 @@ const Hero = () => {
             <ReactMarkdown>{data.about.description}</ReactMarkdown>
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex py-2 px-6 focus:outline-none rounded-full text-base transition duration-500 ease-in-out shadow-xl border-2 border-brand-500 dark:bg-[#333333] hover:bg-brand-500 dark:hover:bg-brand-500 hover:text-white">
-              Download CV
-            </button>
-            <button className="inline-flex py-2 px-6 focus:outline-none rounded-full text-base transition duration-500 ease-in-out shadow-xl border-2 border-gray-200 dark:border-white dark:bg-[#333333] hover:bg-gray-200 dark:hover:bg-white hover:text-gray-600 ml-2">
-              Contact
-            </button>
+            <Link href={data.url.resume}>
+              <a>
+                <button className="inline-flex py-2 px-6 focus:outline-none rounded-full text-base transition duration-500 ease-in-out shadow-xl border-2 border-brand-500 dark:bg-[#333333] hover:bg-brand-500 dark:hover:bg-brand-500 hover:text-white">
+                  Download CV
+                </button>
+              </a>
+            </Link>
+            <Link href="#contact">
+              <a>
+                <button className="inline-flex py-2 px-6 focus:outline-none rounded-full text-base transition duration-500 ease-in-out shadow-xl border-2 border-gray-200 dark:border-white dark:bg-[#333333] hover:bg-gray-200 dark:hover:bg-white hover:text-gray-600 ml-2">
+                  Contact
+                </button>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

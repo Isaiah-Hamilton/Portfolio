@@ -1,10 +1,20 @@
 {
   "url": {
     "twitter": "https://twitter.com/Isaiah7Hamilton",
-    "github": "https://github.com/isaiah7hamilton",
     "linkedin": "https://www.linkedin.com/in/isaiah-hamilton-093361209/",
     "instagram": "https://www.instagram.com/isaiah7hamilton/",
-    "website": "https://isaiah-hamilton.com"
+    "website": "https://isaiah-hamilton.com",
+    "email": "isaiah7hamilton@gmail.com",
+    "resume": "https://docs.google.com/document/d/1JJlE_4wq8dqF0r95qgI369dVDsdhmy1rnr_IMbAXZ9Q/edit?usp=sharing",
+    "github": {
+      "username": "isaiah-hamilton",
+      "url": "https://github.com/isaiah-hamilton",
+      "repos": {
+        "portfolio": "https://github.com/isaiah-hamilton/portfolio",
+        "supashare": "https://github.com/isaiah-hamilton/supashare",
+        "custodi": "https://github.com/harryET/custodi"
+      }
+    }
   },
   "about": {
     "name": "Isaiah Hamilton",

@@ -44,7 +44,7 @@ export const Card = (props: Props) => {
 
 const Portfolio = () => {
   return (
-    <div className="mt-6">
+    <div className="portfolio mt-6" id="portfolio">
       <h1 className="title-font sm:text-4xl text-3xl font-bold text-center mb-2">Portfolio</h1>
       <div className="relative px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
         <div className="relative mx-auto max-w-7xl">
