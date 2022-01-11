@@ -10,7 +10,7 @@ const Footer = () => {
             Twitter
           </a>
         </Link>
-        <Link href={data.url.github}>
+        <Link href={data.url.github.url}>
           <a className="mx-2 text-[#666666] dark:text-gray-300 hover:text-brand-400 dark:hover:text-brand-500">
             Github
           </a>
