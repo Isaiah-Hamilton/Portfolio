@@ -63,6 +63,7 @@ const Navbar = (props: Props) => {
               className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer"
             >
               <GithubIcon />
+              <span className="sr-only">Github link</span>
             </a>
           </Link>
         </div>

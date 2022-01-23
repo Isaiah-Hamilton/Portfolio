@@ -20,6 +20,7 @@ export const Card = (props: Props) => {
         <Link href={link}>
           <a>
             <img className="object-cover w-full h-48" src={image} alt="" />
+            <span className="sr-only">{title} link</span>
           </a>
         </Link>
       </div>
