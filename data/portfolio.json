@@ -1,7 +1,7 @@
 [
   {
     "title": "Portfolio",
-    "image": "/portfolio.png",
+    "image": "/portfolio.webp",
     "description": "Here are some of my projects that I&apos;ve worked on.",
     "github": "https://github.com/isaiah7hamilton/portfolio",
     "link": "/",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Supashare",
-    "image": "/supashare.png",
+    "image": "/supashare.webp",
     "description": "The simplest way to send big ideas around the world, and discover new creative work while your at it.",
     "github": "https://github.com/isaiah7hamilton/portfolio",
     "link": "https://supashare.vercel.app",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Custodi",
-    "image": "/custodi.png",
+    "image": "/custodi.webp",
     "description": "The open source Sentry alternative.",
     "github": "https://github.com/isaiah7hamilton/portfolio",
     "link": "https://custodi-six.vercel.app",
