@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import data from '../data/data.json'
 import portfolio from '../data/portfolio.json'
 import ReactMarkdown from 'react-markdown'
 
@@ -15,10 +14,10 @@ export const Card = (props: Props) => {
   const { image, title, description, link, language } = props
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg transition duration-300 ease-in-out hover:-translate-y-6">
+    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg transition duration-300 ease-in-out hover:-translate-y-3">
       <div className="flex-shrink-0">
         <Link href={link}>
-          <a>
+          <a target="_blank">
             <img className="object-cover w-full h-48" src={image} alt="" />
             <span className="sr-only">{title} link</span>
           </a>
@@ -45,7 +44,7 @@ export const Card = (props: Props) => {
 
 const Portfolio = () => {
   return (
-    <div className="portfolio mt-6" id="portfolio">
+    <div className="portfolio section" id="portfolio">
       <h1 className="title-font sm:text-4xl text-3xl font-bold text-center mb-2">Portfolio</h1>
       <div className="relative px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
         <div className="relative mx-auto max-w-7xl">

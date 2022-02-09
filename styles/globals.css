@@ -23,3 +23,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.section {
+  padding-top: 6rem;
+}

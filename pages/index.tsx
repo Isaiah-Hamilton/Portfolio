@@ -4,6 +4,7 @@ import Layout from '../components/Layouts'
 import Hero from '../components/Hero'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
+import Experience from '../components/Experience'
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Hero />
+        <Experience />
         <Portfolio />
         <Contact />
       </Layout>

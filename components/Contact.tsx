@@ -4,7 +4,7 @@ import data from '../data/data.json'
 
 const Contact = () => {
   return (
-    <div className="contact mb-16" id="contact">
+    <div className="contact mb-16 section" id="contact">
       <div className="grid justify-items-start">
         <h1 className="title-font sm:text-4xl text-3xl font-bold text-center m-auto mb-6">
           Contact

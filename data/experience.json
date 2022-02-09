@@ -1,0 +1,11 @@
+[
+  {
+    "company": "Supabase",
+    "image": "/supabase.webp",
+    "description": "The open source Firebase alternative. Create a backend in less than 2 minutes. Start your project with a Database, Authentication, and Storage.",
+    "github": "https://github.com/supabase",
+    "link": "https://supabase.com",
+    "role": "Intern",
+    "date": "February 2022 - April 2022"
+  }
+]
