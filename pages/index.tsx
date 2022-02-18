@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <meta name="author" content="Isaiah-Hamilton" />
         <meta name="author" content="Isaiah7Hamilton" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Isaiah7Hamilton" />
         <meta name="twitter:creator" content="@Isaiah7Hamilton" />
