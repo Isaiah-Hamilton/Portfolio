@@ -6,21 +6,5 @@
     "github": "https://github.com/Isaiah-Hamilton/Portfolio",
     "link": "https://github.com/Isaiah-Hamilton/Portfolio",
     "language": "Nextjs · Typescript · Tailwind"
-  },
-  {
-    "title": "Supashare",
-    "image": "/supashare.webp",
-    "description": "The simplest way to send big ideas around the world, and discover new creative work while your at it.",
-    "github": "https://github.com/isaiah7hamilton/supashare",
-    "link": "https://supashare.vercel.app",
-    "language": "Nextjs · Typescript · Tailwind · Supabase"
-  },
-  {
-    "title": "Custodi",
-    "image": "/custodi.webp",
-    "description": "The open source Sentry alternative.",
-    "github": "https://github.com/harryET/custodi",
-    "link": "https://github.com/harryET/custodi",
-    "language": "Nextjs · Typescript · Tailwind · Supabase"
   }
 ]

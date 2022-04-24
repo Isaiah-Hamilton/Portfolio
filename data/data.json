@@ -1,25 +1,18 @@
 {
-  "url": {
-    "twitter": "https://twitter.com/Isaiah7Hamilton",
-    "linkedin": "https://www.linkedin.com/in/isaiah-hamilton-093361209/",
-    "instagram": "https://www.instagram.com/isaiah7hamilton/",
-    "website": "https://isaiah-hamilton.com",
-    "email": "isaiah7hamilton@gmail.com",
-    "resume": "/resume.pdf",
-    "github": {
-      "username": "isaiah-hamilton",
-      "url": "https://github.com/isaiah-hamilton",
-      "repos": {
-        "portfolio": "https://github.com/isaiah-hamilton/portfolio",
-        "supashare": "https://github.com/isaiah-hamilton/supashare",
-        "custodi": "https://github.com/harryET/custodi"
-      }
+  "name": "Isaiah Hamilton",
+  "title": "Frontend Developer",
+  "twitter": "https://twitter.com/isaiah7hamilton",
+  "linkedin": "https://www.linkedin.com/in/isaiah-hamilton-093361209/",
+  "instagram": "https://www.instagram.com/isaiah7hamilton/",
+  "website": "https://isaiah-hamilton.com",
+  "email": "isaiah7hamilton@gmail.com",
+  "github": {
+    "username": "isaiah-hamilton",
+    "url": "https://github.com/isaiah-hamilton",
+    "repos": {
+      "portfolio": "https://github.com/isaiah-hamilton/portfolio",
+      "live-atc": "https://github.com/isaiah-hamilton/live-atc",
+      "atc-api": "https://github.com/isaiah-hamilton/atc-api"
     }
-  },
-  "about": {
-    "name": "Isaiah Hamilton",
-    "title": "Full Stack Developer",
-    "image": "/heroImg.webp",
-    "description": "I&apos;m a 15 year old full stack developer based in Atlanta. I have strong passion for coding and building things that impact people&apos;s day to day lives and to make them better. I am interested in Typescript, Next.js, Deno, Supabase, and building consumer apps + developer tools. In my free time, you can see skating, gaming, exploring, and talking to new people."
   }
 }

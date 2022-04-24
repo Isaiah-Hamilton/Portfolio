@@ -62,7 +62,7 @@ const Navbar = (props: Props) => {
               Contact
             </a>
           </Link>
-          <Link href={data.url.github.repos.portfolio}>
+          <Link href={data.github.repos.portfolio}>
             <a
               target="_blank"
               rel="noopener"
