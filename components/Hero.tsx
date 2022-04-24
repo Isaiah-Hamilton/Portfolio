@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import data from '../data/data.json'
-import ReactMarkdown from 'react-markdown'
 
 const Hero = () => {
   return (
