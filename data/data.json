@@ -14,5 +14,9 @@
       "live-atc": "https://github.com/isaiah-hamilton/live-atc",
       "atc-api": "https://github.com/isaiah-hamilton/atc-api"
     }
-  }
+  },
+  "skills": [
+    { "title": "Frontend", "items": ["Next.js", "Tailwind", "Javascript", "Figma"] },
+    { "title": "Backend", "items": ["Node.js", "Deno", "Supabase", "Golang"] }
+  ]
 }
