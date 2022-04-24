@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import Experience from '../components/Experience'
+import Skills from '../components/Skills'
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Hero />
+        <Skills />
         <Experience />
         <Portfolio />
         <Contact />
