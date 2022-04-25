@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import React from 'react'
 import data from '../data/data.json'
 
 const Contact = () => {
   return (
-    <div className="contact mb-16 section" id="contact">
-      <div className="grid justify-items-start">
-        <h1 className="title-font sm:text-4xl text-3xl font-bold text-center m-auto mb-6">
+    <div className="contact section" id="contact">
+      <div className="grid justify-items-start mb-16">
+        <h1 className="title-font sm:text-4xl text-3xl font-bold text-center m-auto mb-10">
           Contact
         </h1>
         <p className="w-[45%] text-center m-auto mb-6">

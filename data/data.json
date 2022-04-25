@@ -18,5 +18,34 @@
   "skills": [
     { "title": "Frontend", "items": ["Next.js", "Tailwind", "Javascript", "Figma"] },
     { "title": "Backend", "items": ["Node.js", "Deno", "Supabase", "Golang"] }
+  ],
+  "experience": [
+    {
+      "company": "Supabase",
+      "image": "/supabase.webp",
+      "description": "The open source Firebase alternative. Create a backend in less than 2 minutes. Start your project with a Database, Authentication, and Storage.",
+      "github": "https://github.com/supabase",
+      "link": "https://supabase.com",
+      "role": "Frontend Developer Intern",
+      "date": "February 2022 - April 2022"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Portfolio",
+      "imageName": "portfolio",
+      "description": "A portfolio website to showcase some of my latest work and projects that I've worked on.",
+      "github": "https://github.com/Isaiah-Hamilton/Portfolio",
+      "link": "https://isaiah-hamilton.com",
+      "language": "Nextjs · Typescript · Tailwind"
+    },
+    {
+      "title": "Live ATC",
+      "imageName": "live-atc",
+      "description": "Here are some of my projects that I've worked on.",
+      "github": "https://github.com/Isaiah-Hamilton/live-atc",
+      "link": "https://live-atc.vercel.app",
+      "language": "Nextjs · Typescript · Tailwind · Supabase"
+    }
   ]
 }

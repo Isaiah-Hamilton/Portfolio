@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
 import data from '../data/data.json'
@@ -42,9 +41,9 @@ const Navbar = (props: Props) => {
 
       <div className="items-center md:flex">
         <div className="flex flex-col md:flex-row md:mx-6">
-          <Link href="/">
+          <Link href="#skills">
             <a className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
-              Home
+              Skills
             </a>
           </Link>
           <Link href="#experience">

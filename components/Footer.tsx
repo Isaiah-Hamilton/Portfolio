@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import data from '../data/data.json'
+import HeartIcon from './Icons/HeartIcon'
 
 const Footer = () => {
   return (
@@ -19,6 +20,15 @@ const Footer = () => {
           <a className="mx-2 text-[#666666] dark:text-gray-300 hover:text-brand-400 dark:hover:text-brand-500">
             Linkedin
           </a>
+        </Link>
+      </div>
+
+      <div className="flex space-x-1">
+        <span>Code with</span>
+        <HeartIcon />
+        <span>by</span>
+        <Link href="https://github.com/isaiah-hamilton">
+          <a>Isaiah Hamilton</a>
         </Link>
       </div>
 
