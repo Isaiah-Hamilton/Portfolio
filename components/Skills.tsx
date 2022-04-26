@@ -6,7 +6,7 @@ const Skills = () => {
     <div className="skills section" id="skills">
       <h1 className="title-font sm:text-4xl text-3xl font-bold text-center mb-10">Skills</h1>
       <div className="grid justify-items-center">
-        <div className="flex space-x-10">
+        <div className="md:flex space-y-10 md:space-x-10 md:space-y-0">
           {data.skills.map((skill, i) => {
             return (
               <div
