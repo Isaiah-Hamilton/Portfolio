@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
 import data from '../data/data.json'
+import MenuIcon from './Icons/MenuIcon'
 import GithubIcon from './Icons/GithubIcon'
 
 type Props = {
@@ -26,20 +27,15 @@ const Navbar = (props: Props) => {
         <div className="flex md:hidden">
           <button
             type="button"
-            className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+            className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline focus:ring-2 rounded transition duration-300 ease-in-out"
             aria-label="toggle menu"
           >
-            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-              <path
-                fillRule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-              ></path>
-            </svg>
+            <MenuIcon />
           </button>
         </div>
       </div>
 
-      <div className="items-center md:flex">
+      <div className="items-center hidden md:flex">
         <div className="flex flex-col md:flex-row md:mx-6">
           <Link href="#skills">
             <a className="my-1 text-sm font-medium transition-colors duration-200 transform dark:text-gray-200 md:mx-4 md:my-0 hover:text-brand-400 dark:hover:text-brand-500 cursor-pointer">
