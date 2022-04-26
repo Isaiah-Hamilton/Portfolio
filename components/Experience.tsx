@@ -7,7 +7,7 @@ const Experience = () => {
       <h1 className="title-font sm:text-4xl text-3xl font-bold text-center mb-10">Experience</h1>
       <div className="relative px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto max-w-7xl">
-          <div className="flex max-w-lg space-x-10 mx-auto lg:max-w-none justify-center">
+          <div className="grid md:flex max-w-lg space-y-10 md:space-x-10 md:space-y-0 mx-auto lg:max-w-none justify-center">
             {data.experience.map((experience, i) => {
               return (
                 <div
