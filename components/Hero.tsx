@@ -7,15 +7,17 @@ const Hero = () => {
     <div className="body-font">
       <div className="container mx-auto flex px-5 pt-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center">
-          <div className="rounded-full border-8 border-gray-400 h-[416px]">
-            <Image
-              className="object-cover object-center rounded-full"
-              height={400}
-              width={400}
-              alt="hero"
-              src={'/heroImage.jpg'}
-              quality={85}
-            />
+          <div className="rounded-full h-full border-4 border-gray-400 bg-gray-400">
+            <div className="mt-2 mx-[8px]">
+              <Image
+                className="rounded-full"
+                height={400}
+                width={400}
+                alt="hero"
+                src={'/heroImage.jpg'}
+                quality={85}
+              />
+            </div>
           </div>
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
