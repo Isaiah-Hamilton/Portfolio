@@ -21,9 +21,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-14 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <p className="font-light">{data.title}</p>
+          <p className="text-xs sm:text-sm font-light">{data.title}</p>
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold">Isaiah Hamilton</h1>
-          <p className="mb-8 leading-relaxed text-gray-400 dark:text-gray-100">
+          <p className="text-sm lg:text-base  mb-8 leading-relaxed text-gray-400 dark:text-gray-100">
             I&apos;m a {new Date().getFullYear() - 2006} year old frontend developer based in
             Atlanta. I have a strong passion for UI/UX design and coding/building things that impact
             people&apos;s day to day lives and make them better. I am interested in Typescript,

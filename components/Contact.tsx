@@ -8,7 +8,7 @@ const Contact = () => {
         <h1 className="title-font sm:text-4xl text-3xl font-bold text-center m-auto mb-10">
           Contact
         </h1>
-        <p className="w-[45%] text-center m-auto mb-6">
+        <p className="sm:w-[75%] md:w-[60%] lg:w-[45%] text-sm md:text-base text-center m-auto mb-10">
           I&apos;m currently not looking for any Software Engineering opportunities at the moment.
           Though, if you know of any positions available, if you have any questions, or if you want
           to get in touch, please email me down below.
