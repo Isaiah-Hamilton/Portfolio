@@ -33,3 +33,7 @@ a {
 .section {
   padding-top: 8rem;
 }
+
+.swiper-container {
+  overflow: hidden;
+}

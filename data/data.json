@@ -30,6 +30,15 @@
       "date": "February 2022 - April 2022"
     }
   ],
+  "testimonial": [
+    {
+      "name": "null",
+      "title": "null",
+      "rating": 0,
+      "quote": "null",
+      "image": "/null.jpg"
+    }
+  ],
   "portfolio": [
     {
       "title": "Portfolio",
