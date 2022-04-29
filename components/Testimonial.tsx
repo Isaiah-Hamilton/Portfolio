@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
+import Image from 'next/image'
 import data from '../data/data.json'
 
 const repeat = (num: any, times: any) => {
@@ -42,10 +43,12 @@ const Testimonials = () => {
                     <div className="swiper-slide">
                       <blockquote className="p-8 bg-gray-100 shadow-lg rounded-lg">
                         <div className="flex items-center">
-                          <img
+                          <Image
                             src={testimonial.image}
-                            alt=""
-                            className="object-cover w-16 h-16 rounded-full"
+                            alt="testimonial image"
+                            className="rounded-full"
+                            width={64}
+                            height={64}
                           />
                           <div className="ml-4">
                             <div className="rating">{repeat('⭐️ ', testimonial.rating)}</div>
