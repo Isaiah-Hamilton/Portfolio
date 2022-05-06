@@ -1,35 +1,23 @@
 import Link from 'next/link'
-import data from '../data/data.json'
+import { footerData } from '../lib/data'
 import HeartIcon from './Icons/HeartIcon'
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-between py-4 sm:flex-row dark:bg-[#252525] border-t-2 border-[#f2f2f2] dark:border-[#333333] -mx-16 px-16 space-y-3 sm:space-y-0">
+    <div className="flex flex-col items-center justify-between py-4 sm:flex-row -mx-16 px-16 space-y-3 sm:space-y-0">
       <div className="flex -mx-2 text-xs md:text-sm lg:text-base">
-        <Link href={data.twitter}>
-          <a
-            target="_blank"
-            className="mx-2 text-[#666666] dark:text-gray-300 hover:text-brand-400 dark:hover:text-brand-500"
-          >
-            Twitter
-          </a>
-        </Link>
-        <Link href={data.github.url}>
-          <a
-            target="_blank"
-            className="mx-2 text-[#666666] dark:text-gray-300 hover:text-brand-400 dark:hover:text-brand-500"
-          >
-            Github
-          </a>
-        </Link>
-        <Link href={data.linkedin}>
-          <a
-            target="_blank"
-            className="mx-2 text-[#666666] dark:text-gray-300 hover:text-brand-400 dark:hover:text-brand-500"
-          >
-            Linkedin
-          </a>
-        </Link>
+        {footerData.links.map((footer: any, i: number) => {
+          return (
+            <Link href={footer.url} key={i}>
+              <a
+                target="_blank"
+                className="mx-2 text-[#666666] dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-500"
+              >
+                {footer.title}
+              </a>
+            </Link>
+          )
+        })}
       </div>
 
       <div className="flex items-center space-x-1 text-xs md:text-sm lg:text-base">
@@ -37,7 +25,7 @@ const Footer = () => {
         <HeartIcon />
         <span>by</span>
         <Link href="https://github.com/isaiah-hamilton">
-          <a target="_blank">Isaiah Hamilton</a>
+          <a target="_blank">{footerData.madeBy}</a>
         </Link>
       </div>
 

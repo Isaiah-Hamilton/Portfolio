@@ -26,13 +26,13 @@ const DefaultLayout = (props: Props) => {
   }
 
   return (
-    <>
-      <div className="bg-white dark:bg-[#222222] text-gray-600 dark:text-white h-screen pt-10 px-16">
+    <div className="max-w-screen-xl mx-auto">
+      <div className="bg-white dark:bg-[#131316] text-gray-600 dark:text-white h-screen px-8 pt-4">
         {!hideHeader && <Navbar darkMode={darkMode} updateTheme={updateTheme} />}
         <main>{children}</main>
         {!hideFooter && <Footer />}
       </div>
-    </>
+    </div>
   )
 }
 

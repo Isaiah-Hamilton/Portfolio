@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import Image from 'next/image'
-import data from '../data/data.json'
 
 const repeat = (num: any, times: any) => {
   let result = ''
@@ -14,7 +13,7 @@ const repeat = (num: any, times: any) => {
 const Testimonials = () => {
   return (
     <div className="testimonials section" id="testimonials">
-      <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold tracking-tight text-center sm:text-5xl mb-10">
           Read trusted reviews from customers
         </h2>
@@ -37,7 +36,7 @@ const Testimonials = () => {
             style={{ padding: '2rem 1rem 2rem 1rem' }}
           >
             <div className="swiper-wrapper">
-              {data.testimonial.map((testimonial, i) => {
+              {/*{data.testimonial.map((testimonial, i) => {
                 return (
                   <SwiperSlide key={i}>
                     <div className="swiper-slide">
@@ -64,7 +63,7 @@ const Testimonials = () => {
                     </div>
                   </SwiperSlide>
                 )
-              })}
+              })}*/}
             </div>
           </Swiper>
         </div>

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 interface Props {
   darkMode: boolean
   updateTheme: Function
@@ -46,12 +47,12 @@ function DarkModeToggle(props: Props) {
   }
 
   return (
-    <div className="flex items-center">
+    <motion.div whileTap={{ scale: 0.8 }} className="flex items-center">
       <button type="button" aria-pressed="false" onClick={() => toggleDarkMode()}>
-        {darkMode ? <MoonIcon /> : <SunIcon />}
+        {darkMode ? <SunIcon /> : <MoonIcon />}
         <span className="sr-only">Theme Toggle</span>
       </button>
-    </div>
+    </motion.div>
   )
 }
 

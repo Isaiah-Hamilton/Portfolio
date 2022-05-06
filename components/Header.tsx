@@ -11,7 +11,7 @@ const Header = () => {
       <meta name="author" content="Isaiah Hamilton" />
       <meta name="author" content="Isaiah-Hamilton" />
       <meta name="author" content="Isaiah7Hamilton" />
-      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+      <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
       <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@Isaiah7Hamilton" />
