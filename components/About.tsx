@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Button from './Button'
 import { aboutData } from '../lib/data'
 import ReactMarkdown from 'react-markdown'
 import { motion } from 'framer-motion'
@@ -9,7 +9,7 @@ const About = () => {
     <section className="about section" id="about">
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ ease: 'easeIn', delay: 0.25, duration: 1.25 }}
+        transition={{ ease: 'easeIn', delay: 0.15, duration: 1 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
@@ -50,17 +50,13 @@ const About = () => {
             }}
           >
             <div className="lg:py-24">
-              <h2 className="text-3xl font-bold sm:text-4xl">About Me</h2>
+              <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">About Me</h2>
               <ReactMarkdown className="mt-4 text-sm sm:text-base text-gray-500">
                 {aboutData.description}
               </ReactMarkdown>
-              <motion.div whileTap={{ scale: 0.9 }} className="w-fit">
-                <Link href={aboutData.link}>
-                  <a className="inline-flex items-center px-6 sm:px-8 py-2 sm:py-3 mt-4 text-sm sm:text-base text-white bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-500 rounded-md transition ease-in duration-200">
-                    {aboutData.cta}
-                  </a>
-                </Link>
-              </motion.div>
+              <Button link={aboutData.link} externalLink>
+                {aboutData.cta}
+              </Button>
             </div>
           </motion.div>
         </div>

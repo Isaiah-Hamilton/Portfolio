@@ -13,14 +13,14 @@ const Portfolio = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{
-          delay: 0.2,
+          delay: 0.15,
           duration: 0.8,
           type: 'spring',
           stiffness: 100,
           damping: 20,
         }}
       >
-        <h1 className="text-4xl font-semibold mb-16">Projects</h1>
+        <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl mb-16">Projects</h1>
         <div className="grid md:grid-cols-3 gap-8">
           {projectData.projects.map((project: any, i: any) => {
             return (

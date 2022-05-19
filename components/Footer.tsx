@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { footerData } from '../lib/data'
+import { Data, footerData } from '../lib/data'
 import HeartIcon from './Icons/HeartIcon'
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
         <span>Code with</span>
         <HeartIcon />
         <span>by</span>
-        <Link href="https://github.com/isaiah-hamilton">
+        <Link href={Data.github}>
           <a target="_blank">{footerData.madeBy}</a>
         </Link>
       </div>

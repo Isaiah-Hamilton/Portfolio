@@ -1,9 +1,15 @@
-export const data = {
+export const Data = {
   name: 'Isaiah Hamilton',
   email: 'isaiah7hamilton@gmail.com',
+  github: 'https://github.com/isaiah-hamilton',
   workEmail: 'isaiah@supabase.com',
   phone: '+1 (404) 936-3781',
 }
+
+// Age Data
+const currentYear = new Date().getFullYear()
+const birthYear = 2006
+const age = currentYear - birthYear
 
 // Nav Data
 export const navData = {
@@ -40,10 +46,6 @@ export const heroData = {
   link: '#contact',
 }
 
-const currentYear = new Date().getFullYear()
-const birthYear = 2006
-const age = currentYear - birthYear
-
 // About Data
 export const aboutData = {
   title: 'frontend developer',
@@ -53,6 +55,22 @@ export const aboutData = {
   description: `I'm a ${age} year old frontend developer based in Atlanta, and currently working @Supabase as an intern. I have a strong passion for UI/UX design and coding/building things that impact people's day to day lives and make them better. I am interested in Typescript, Next.js, Deno, Golang, and building consumer apps and developer tools. In my free time, you can see me skating, gaming, exploring, and talking to new people.`,
   cta: 'Resume',
   link: '/resume.pdf',
+}
+
+export const experienceData = {
+  startYear: 2020,
+  completeProjects: 2,
+  startUps: 1,
+  experience: [
+    {
+      company: 'Supabase',
+      role: 'Frontend Developer',
+      image: '/supabase-logo.svg',
+      date: 'Feb 2022 - Current',
+      github: 'https://github.com/supabase/supabase',
+      url: 'https://supabase.com',
+    },
+  ],
 }
 
 export const projectData = {
@@ -71,21 +89,6 @@ export const projectData = {
       image: '/live-atc.png',
       github: 'https://github.com/isaiah-hamilton/live-atc',
       url: 'https://live-atc.vercel.app',
-    },
-  ],
-}
-
-export const experienceData = {
-  experience: [
-    {
-      company: 'Supabase',
-      role: 'Frontend Developer',
-      description:
-        'The open source Firebase alternative. Create a backend in less than 2 minutes. Start your project with a Database, Authentication, and Storage.',
-      image: '/supabase-logo.png',
-      date: 'February 2022 - April 2022',
-      github: 'https://github.com/supabase/supabase',
-      url: 'https://supabase.com',
     },
   ],
 }
@@ -112,5 +115,4 @@ export const contactData = {
   description:
     'I&apos;m currently not looking for any Software Engineering opportunities at the moment. Though, if you know of any positions available, if you have any questions, or if you want to get in touch, please email me down below.',
   cta: 'Contact',
-  link: '',
 }
