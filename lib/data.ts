@@ -4,6 +4,8 @@ export const Data = {
   github: 'https://github.com/isaiah-hamilton',
   workEmail: 'isaiah@supabase.com',
   phone: '+1 (404) 936-3781',
+  location: 'Atlanta, GA',
+  company: 'Supabase',
 }
 
 // Age Data
@@ -50,9 +52,7 @@ export const heroData = {
 export const aboutData = {
   title: 'frontend developer',
   image: '/profile.jpg',
-  location: 'Atlanta',
-  company: 'Supabase',
-  description: `I'm a ${age} year old frontend developer based in Atlanta, and currently working @Supabase as an intern. I have a strong passion for UI/UX design and coding/building things that impact people's day to day lives and make them better. I am interested in Typescript, Next.js, Deno, Golang, and building consumer apps and developer tools. In my free time, you can see me skating, gaming, exploring, and talking to new people.`,
+  description: `I'm a ${age} year old frontend developer based in ${Data.location} and currently working @${Data.company} as an intern. I have a strong passion for UI/UX design and coding/building things that impact people's day to day lives and make them better. I am interested in Typescript, Next.js, Deno, Golang, and building consumer apps and developer tools. In my free time, you can see me skating, gaming, exploring, and talking to new people.`,
   cta: 'Resume',
   link: '/resume.pdf',
 }
