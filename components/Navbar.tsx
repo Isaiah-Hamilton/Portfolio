@@ -32,6 +32,7 @@ const Navbar = (props: Props) => {
               <a className="text-2xl font-semibold transition-colors duration-200 transform flex space-x-2">
                 <Image
                   src={darkMode ? '/logo-light.svg' : '/logo-dark.svg'}
+                  alt="Logo"
                   width={20}
                   height={20}
                 />
