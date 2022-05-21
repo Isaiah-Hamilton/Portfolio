@@ -5,17 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "esbuild": "esbuild ./ --bundle --minify --sourcemap",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write '**/*.{js,ts,jsx,tsx,yml,json,css,md,mdx}'"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.1",
-    "@uiball/loaders": "^1.2.3",
     "autoprefixer": "^10.4.4",
     "framer-motion": "^6.3.3",
-    "next": "12.1.0",
+    "next": "12.1.6",
     "postcss": "^8.4.5",
     "prettier": "^2.6.1",
     "react": "17.0.2",

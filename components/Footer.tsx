@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Data, footerData } from '../lib/data'
-import HeartIcon from './Icons/HeartIcon'
+import { HeartIcon } from './Icons/Index'
 
 const Footer = () => {
   return (
