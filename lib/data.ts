@@ -98,7 +98,7 @@ export const projectData = {
 // Contact Data
 export const contactData = {
   description:
-    'I&apos;m currently not looking for any Software Engineering opportunities at the moment. Though, if you know of any positions available, if you have any questions, or if you want to get in touch, please email me down below.',
+    'I&apos;m currently not looking for any frontend development jobs at the moment. Though, if you have any questions, or if you want to get in touch, please email me down below.',
   cta: 'Contact',
 }
 
