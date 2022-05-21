@@ -1,48 +1,86 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
-import data from '../data/data.json'
+import { experienceData } from '../lib/data'
 
 const Experience = () => {
   return (
-    <div className="experience section" id="experience">
-      <h1 className="title-font sm:text-4xl text-3xl font-bold text-center mb-10">Experience</h1>
-      <div className="relative px-4 sm:px-6 lg:px-8">
-        <div className="relative mx-auto max-w-7xl">
-          <div className="grid md:flex max-w-lg space-y-10 md:space-x-10 md:space-y-0 mx-auto lg:max-w-none justify-center">
-            {data.experience.map((experience, i) => {
-              return (
-                <div
-                  key={i}
-                  className="flex flex-col max-w-lg overflow-hidden rounded-lg shadow-lg transition duration-300 ease-in-out hover:-translate-y-3"
-                >
-                  <Link href={experience.link}>
-                    <a target="_blank">
-                      <div className="flex flex-col justify-between flex-1 p-6 bg-white dark:bg-gray-600">
-                        <div className="flex-1">
-                          <div className="block mt-2">
-                            <div>
-                              <h1 className="text-xl font-semibold">{experience.company}</h1>
-                              <p className="text-sm text-gray-400 dark:text-gray-300 mt-1">
-                                {experience.date}
-                              </p>
-                            </div>
-                            <p className="mt-3 text-base">{experience.description}</p>
+    <section className="experience section" id="experience">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ ease: 'easeIn', delay: 0.1, duration: 1 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
+        <div className="space-y-10 sm:mx-auto sm:w-fit md:flex md:space-x-10 lg:space-x-48 xl:space-x-96">
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.5,
+              duration: 1,
+              type: 'spring',
+              stiffness: 100,
+              damping: 20,
+            }}
+          >
+            <div className="space-y-4 w-[300px] sm:w-[360px] lg:w-[430px]">
+              <h1 className="text-5xl sm:text-6xl font-bold w-fit">
+                Years of <br /> Experience
+              </h1>
+              <p className="">
+                I have {new Date().getFullYear() - experienceData.startYear}+ years of experience,
+                with {experienceData.completeProjects} complete projects and have been with{' '}
+                {experienceData.startUps} startup.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.6,
+              duration: 1,
+              type: 'spring',
+              stiffness: 100,
+              damping: 20,
+            }}
+          >
+            <div className="space-y-8">
+              {experienceData.experience.map((experience: any, i: number) => {
+                return (
+                  <motion.div whileTap={{ scale: 0.95 }} className="w-fit" key={i}>
+                    <Link href={experience.url}>
+                      <a target="_blank" className="group">
+                        <div className="flex items-center space-x-6">
+                          <div className="rounded-full bg-[#121212] dark:bg-white p-4 w-[60px] h-[60px]">
+                            <img
+                              className="group-hover:scale-110 transition ease-in duration-150"
+                              src={experience.image}
+                              width={30}
+                              height={30}
+                            />
+                          </div>
+                          <div>
+                            <h4 className="text-xl font-semibold group-hover:text-blue-500 transition ease-in duration-150">
+                              Frontend Developer
+                            </h4>
+                            <p className="text-gray-400 text-xs font-normal">
+                              {experience.company} · {experience.date}
+                            </p>
                           </div>
                         </div>
-                        <div className="flex items-center mt-6">
-                          <div className="flex space-x-1 text-base">
-                            <span>{experience.role}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
+                      </a>
+                    </Link>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </motion.div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </section>
   )
 }
 
