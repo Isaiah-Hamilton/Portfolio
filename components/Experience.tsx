@@ -54,7 +54,7 @@ const Experience = () => {
                     <Link href={experience.url}>
                       <a target="_blank" className="group">
                         <div className="flex items-center space-x-6">
-                          <div className="rounded-full bg-[#1c1c1c] p-4 w-[60px] h-[60px]">
+                          <div className="rounded-full bg-[#121212] dark:bg-white p-4 w-[60px] h-[60px]">
                             <img
                               className="group-hover:scale-110 transition ease-in duration-150"
                               src={experience.image}

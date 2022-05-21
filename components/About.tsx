@@ -13,8 +13,8 @@ const About = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-          <div className="relative w-full h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
+        <div className="grid justify-items-center grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+          <div className="relative w-full max-w-sm h-64 overflow-hidden rounded-lg sm:h-80 sm:max-w-md lg:h-full lg:max-w-none lg:order-last">
             <motion.div
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -28,7 +28,7 @@ const About = () => {
               }}
             >
               <Image
-                src={'https://www.hyperui.dev/photos/man-1.jpeg' || aboutData.image}
+                src={aboutData.image}
                 alt="profile picture"
                 className="absolute inset-0 object-cover rounded-xl"
                 width="100%"
@@ -51,7 +51,7 @@ const About = () => {
           >
             <div className="lg:py-24">
               <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">About Me</h2>
-              <ReactMarkdown className="mt-4 text-sm sm:text-base text-gray-500">
+              <ReactMarkdown className="mt-4 text-sm sm:text-base text-gray-500 max-w-xl">
                 {aboutData.description}
               </ReactMarkdown>
               <Button link={aboutData.link} externalLink>

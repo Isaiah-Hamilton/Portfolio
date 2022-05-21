@@ -57,6 +57,7 @@ export const aboutData = {
   link: '/resume.pdf',
 }
 
+// Experience Data
 export const experienceData = {
   startYear: 2020,
   completeProjects: 2,
@@ -73,6 +74,7 @@ export const experienceData = {
   ],
 }
 
+// Projects Data
 export const projectData = {
   projects: [
     {
@@ -93,6 +95,14 @@ export const projectData = {
   ],
 }
 
+// Contact Data
+export const contactData = {
+  description:
+    'I&apos;m currently not looking for any Software Engineering opportunities at the moment. Though, if you know of any positions available, if you have any questions, or if you want to get in touch, please email me down below.',
+  cta: 'Contact',
+}
+
+// Footer Data
 export const footerData = {
   madeBy: 'Isaiah Hamilton',
   links: [
@@ -109,10 +119,4 @@ export const footerData = {
       title: 'Linkedin',
     },
   ],
-}
-
-export const contactData = {
-  description:
-    'I&apos;m currently not looking for any Software Engineering opportunities at the moment. Though, if you know of any positions available, if you have any questions, or if you want to get in touch, please email me down below.',
-  cta: 'Contact',
 }
