@@ -28,11 +28,7 @@ const Hero = () => {
             <div className="text-2xl sm:text-4xl md:text-5xl md:leading-[1.2] lg:text-6xl lg:leading-[1.2] font-bold">
               <div className="flex space-x-2">
                 <span>Hi, my name is</span>
-                <motion.div whileTap={{ scale: 0.9 }} className="w-fit cursor-pointer">
-                  <span className="hero-title-color text-blue-500 hover:text-blue-600 transition ease-in duration-150">
-                    {heroData.name}
-                  </span>
-                </motion.div>
+                <span className="text-blue-500">{heroData.name}</span>
               </div>
               I&apos;m a {heroData.title}.
             </div>
