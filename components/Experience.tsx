@@ -7,7 +7,7 @@ const Experience = () => {
     <section className="experience section" id="experience">
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ ease: 'easeIn', delay: 0.1, duration: 1 }}
+        transition={{ ease: 'easeIn', duration: 0.8 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >

@@ -9,7 +9,7 @@ const About = () => {
     <section className="about section" id="about">
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ ease: 'easeIn', delay: 0.15, duration: 1 }}
+        transition={{ ease: 'easeIn', duration: 0.8 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >

@@ -12,7 +12,6 @@ const Contact = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: 0.15,
             duration: 0.8,
             type: 'spring',
             stiffness: 100,
