@@ -10,9 +10,12 @@
     "prettier": "prettier --write '**/*.{js,ts,jsx,tsx,yml,json,css,md,mdx}'"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.4",
+    "axios": "^0.27.2",
     "framer-motion": "^6.3.3",
     "next": "12.1.6",
+    "nodemailer": "^6.7.5",
     "postcss": "^8.4.14",
     "prettier": "^2.6.1",
     "react": "17.0.2",

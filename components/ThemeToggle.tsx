@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { SunIcon, MoonIcon } from './Icons/Index'
+import { SunIcon, MoonIcon } from '@heroicons/react/outline'
 
 interface Props {
   darkMode: boolean
@@ -17,7 +17,7 @@ function DarkModeToggle(props: Props) {
   return (
     <motion.div whileTap={{ scale: 0.8 }} className="flex items-center">
       <button type="button" aria-pressed="false" onClick={() => toggleDarkMode()}>
-        {darkMode ? <SunIcon /> : <MoonIcon />}
+        {darkMode ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-6" />}
         <span className="sr-only">Theme Toggle</span>
       </button>
     </motion.div>

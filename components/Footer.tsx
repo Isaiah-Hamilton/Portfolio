@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Data, footerData } from '../lib/data'
-import { HeartIcon } from './Icons/Index'
+import { HeartIcon } from '@heroicons/react/outline'
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
 
       <div className="flex items-center space-x-1 text-xs md:text-sm lg:text-base">
         <span>Code with</span>
-        <HeartIcon />
+        <HeartIcon className="w-7 h-7 stroke-red-500 fill-red-500" />
         <span>by</span>
         <Link href={Data.github}>
           <a target="_blank">{footerData.madeBy}</a>

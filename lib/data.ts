@@ -2,6 +2,7 @@ export const Data = {
   name: 'Isaiah Hamilton',
   email: 'isaiah7hamilton@gmail.com',
   github: 'https://github.com/isaiah-hamilton',
+  website: 'isaiah-hamilton.com',
   workEmail: 'isaiah@supabase.com',
   phone: '+1 (404) 936-3781',
   location: 'Atlanta, GA',
@@ -96,11 +97,7 @@ export const projectData = {
 }
 
 // Contact Data
-export const contactData = {
-  description:
-    'I&apos;m currently not looking for any frontend development jobs at the moment. Though, if you have any questions, or if you want to get in touch, please email me down below.',
-  cta: 'Contact',
-}
+export const contactData = {}
 
 // Footer Data
 export const footerData = {
