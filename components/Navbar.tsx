@@ -30,12 +30,6 @@ const Navbar = (props: Props) => {
           <motion.div whileTap={{ scale: 0.9 }}>
             <Link href="/">
               <a className="text-2xl font-semibold transition-colors duration-200 transform flex space-x-2">
-                <Image
-                  src={darkMode ? '/logo-light.svg' : '/logo-dark.svg'}
-                  alt="Logo"
-                  width={20}
-                  height={20}
-                />
                 <div className="text-base text-[#24282D] dark:text-white">
                   {navData.title.first}
                   <span className="ml-1">{navData.title.last}</span>
