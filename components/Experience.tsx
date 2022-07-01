@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { experienceData } from '../lib/data'
+import config from '../lib/config'
 
 const Experience = () => {
   return (
@@ -29,9 +29,9 @@ const Experience = () => {
                 Years of <br /> Experience
               </h1>
               <p className="">
-                I have {new Date().getFullYear() - experienceData.startYear}+ years of experience,
-                with {experienceData.completeProjects} complete projects and have been with{' '}
-                {experienceData.startUps} startup.
+                {`I have ${config.experience.totalYears}+ years of
+                experience, with ${config.experience.totalProjects} complete projects and have been
+                with ${config.experience.totalCompanies} companies.`}
               </p>
             </div>
           </motion.div>
@@ -48,7 +48,7 @@ const Experience = () => {
             }}
           >
             <div className="space-y-8">
-              {experienceData.experience.map((experience: any, i: number) => {
+              {config.experience.experience.map((experience: any, i: number) => {
                 return (
                   <motion.div whileTap={{ scale: 0.95 }} className="w-fit" key={i}>
                     <Link href={experience.url}>
@@ -60,6 +60,7 @@ const Experience = () => {
                               src={experience.image}
                               width={30}
                               height={30}
+                              alt={experience.company}
                             />
                           </div>
                           <div>

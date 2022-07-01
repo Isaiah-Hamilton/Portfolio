@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import ThemeToggle from './ThemeToggle'
-import { navData } from '../lib/data'
+import config from '../lib/config'
 import { GithubIcon } from './Icons/Index'
 import { motion } from 'framer-motion'
 
@@ -30,10 +29,7 @@ const Navbar = (props: Props) => {
           <motion.div whileTap={{ scale: 0.9 }}>
             <Link href="/">
               <a className="text-2xl font-semibold transition-colors duration-200 transform flex space-x-2">
-                <div className="text-base text-[#24282D] dark:text-white">
-                  {navData.title.first}
-                  <span className="ml-1">{navData.title.last}</span>
-                </div>
+                <div className="text-base text-[#24282D] dark:text-white">{config.name}</div>
               </a>
             </Link>
           </motion.div>
@@ -47,21 +43,19 @@ const Navbar = (props: Props) => {
 
         <div className="items-center hidden md:flex">
           <div className="flex flex-col md:flex-row md:mx-6">
-            {navData.items.map((item: any, i: number) => {
+            {config.navbar.items.map((item: any, i: number) => {
               return (
                 <motion.div whileTap={{ scale: 0.9 }} key={i}>
                   <Link href={item.url}>
-                    <a className="my-1 text-sm font-medium transition-colors duration-200 transform hover:text-indigo-600 dark:hover:text-indigo-500 md:mx-4 md:my-0 cursor-pointer">
-                      {item.title}
+                    <a className="my-1 text-sm font-medium transition-colors duration-200 transform hover:text-blue-600 dark:hover:text-blue-500 md:mx-4 md:my-0 cursor-pointer">
+                      {item.text}
                     </a>
                   </Link>
                 </motion.div>
               )
             })}
-            {navData.source === '' ? (
-              <div></div>
-            ) : (
-              <Link href={navData.source}>
+            {config.repo && (
+              <Link href={config.repo}>
                 <a
                   target="_blank"
                   rel="noopener"

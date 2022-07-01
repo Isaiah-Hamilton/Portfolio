@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
-import { projectData } from '../lib/data'
+import config from '../lib/config'
 import { motion } from 'framer-motion'
 import React from 'react'
 
@@ -21,7 +21,7 @@ const Portfolio = () => {
       >
         <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl mb-16">Projects</h1>
         <div className="grid md:grid-cols-3 gap-8">
-          {projectData.projects.map((project: any, i: any) => {
+          {config.projects.map((project: any, i: any) => {
             return (
               <div
                 className="max-w-md hover:-translate-y-4 transition ease-in-out duration-300"

@@ -1,15 +1,8 @@
-import { heroData } from '../lib/data'
+import config from '../lib/config'
 import { motion } from 'framer-motion'
 import Button from './Button'
 
 const Hero = () => {
-  function handleClick() {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: 'smooth',
-    })
-  }
-
   return (
     <section id="hero" className="hero section">
       <motion.div
@@ -28,11 +21,15 @@ const Hero = () => {
             <div className="text-2xl sm:text-4xl md:text-5xl md:leading-[1.2] lg:text-6xl lg:leading-[1.2] font-bold">
               <div className="flex space-x-2">
                 <span>Hi, my name is</span>
-                <span className="text-blue-500">{heroData.name}</span>
+                <span className="text-blue-500">{config.name.split(' ').slice(0, -1).join()}</span>
               </div>
-              I&apos;m a {heroData.title}.
+              I&apos;m a {config.role}.
             </div>
-            <Button link={heroData.link}>{heroData.cta}</Button>
+            {config.hero.cta.map((cta: { url: string; text: string }, i: number) => (
+              <Button key={i} link={cta.url} externalLink>
+                {cta.text}
+              </Button>
+            ))}
           </div>
         </div>
       </motion.div>

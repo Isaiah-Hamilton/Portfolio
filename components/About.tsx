@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from './Button'
-import { aboutData } from '../lib/data'
+import config from '../lib/config'
 import ReactMarkdown from 'react-markdown'
 import { motion } from 'framer-motion'
 
@@ -28,7 +28,7 @@ const About = () => {
               }}
             >
               <Image
-                src={aboutData.image}
+                src={config.about.image}
                 alt="profile picture"
                 className="absolute inset-0 object-cover rounded-xl"
                 width="100%"
@@ -52,11 +52,13 @@ const About = () => {
             <div className="lg:py-24">
               <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">About Me</h2>
               <ReactMarkdown className="mt-4 text-sm sm:text-base text-gray-500 max-w-xl">
-                {aboutData.description}
+                {config.about.description}
               </ReactMarkdown>
-              <Button link={aboutData.link} externalLink>
-                {aboutData.cta}
-              </Button>
+              {config.about.cta.map((cta: { url: string; text: string }, i: number) => (
+                <Button key={i} link={cta.url} externalLink>
+                  {cta.text}
+                </Button>
+              ))}
             </div>
           </motion.div>
         </div>
