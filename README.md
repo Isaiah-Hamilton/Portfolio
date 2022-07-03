@@ -6,3 +6,4 @@ This is my personal portfolio website.
 
 - [Nextjs](https://nextjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://framer.com/motion/)
