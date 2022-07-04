@@ -19,7 +19,10 @@ const Button = (props: Props) => {
         onClick={onClick || (() => {})}
       >
         <Link href={link}>
-          <a className="px-6 sm:px-8 py-2 sm:py-3" target={externalLink ? '_blank' : undefined}>
+          <a
+            className="px-4 sm:px-6 py-2 sm:py-3 text-sm"
+            target={externalLink ? '_blank' : undefined}
+          >
             {children}
           </a>
         </Link>
