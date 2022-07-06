@@ -11,7 +11,7 @@ const Footer = () => {
             <Link href={footer.url} key={i}>
               <a
                 target="_blank"
-                className="mx-2 text-[#666666] dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-500"
+                className="mx-2 text-[#666666] dark:text-gray-300 hover:text-blue-500"
               >
                 {footer.text}
               </a>
