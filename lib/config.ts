@@ -6,6 +6,7 @@ const config = {
   email: 'isaiah7hamilton@gmail.com',
   github: 'https://github.com/isaiah-hamilton',
   twitter: 'https://twitter.com/isaiah7hamilton',
+  linkedin: 'https://www.linkedin.com/in/isaiah-hamilton-093361209/',
   repo: 'https://github.com/isaiah-hamilton/portfolio',
   role: 'Frontend Developer',
   phone: '+1 (404) 936-3781',
@@ -90,6 +91,20 @@ const config = {
       },
     ],
   },
+  footer: [
+    {
+      text: 'Github',
+      url: 'https://github.com/isaiah-hamilton',
+    },
+    {
+      text: 'Twitter',
+      url: 'https://twitter.com/isaiah7hamilton',
+    },
+    {
+      text: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/isaiah-hamilton-093361209/',
+    },
+  ],
 }
 
 export default config
