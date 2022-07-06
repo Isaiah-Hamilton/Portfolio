@@ -69,14 +69,14 @@ const config = {
       title: 'Portfolio',
       description:
         'A portfolio website to showcase some of my latest work and projects that I&apos;ve worked on.',
-      image: '/portfolio.png',
+      image: '/projects/portfolio.png',
       github: 'https://github.com/isaiah-hamilton/portfolio',
       url: 'https://isaiah-hamilton.com',
     },
     {
       title: 'Live ATC',
       description: 'A website that lets you listen to real time ATC (air traffic control)  radio.',
-      image: '/live-atc.png',
+      image: '/projects/live-atc.png',
       github: 'https://github.com/isaiah-hamilton/live-atc',
       url: 'https://live-atc.vercel.app',
     },
