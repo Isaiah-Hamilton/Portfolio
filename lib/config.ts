@@ -87,7 +87,7 @@ const config = {
     cta: [
       {
         text: 'Contact',
-        url: `mailto:`,
+        url: 'mailto:isaiah7hamilton@gmail.com',
       },
     ],
   },
