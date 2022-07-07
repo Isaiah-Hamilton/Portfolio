@@ -41,7 +41,7 @@ const config = {
   },
   about: {
     image: '/profile.jpg',
-    description: `I&apos;m a 16 year old frontend developer based in  and currently working @supabase as a. I have a strong passion for UI/UX design and coding/building things that impact people&apos;s day to day lives and make them better. I am interested in Typescript, Next.js, Deno, Golang, and building consumer apps and developer tools. In my free time, you can see me skating, gaming, exploring, and talking to new people.`,
+    description: `I&apos;m a 16 year old frontend developer based in Atlanta and currently working @Supabase as an intern. I have a strong passion for UI/UX design and coding/building things that impact people&apos;s day to day lives and make them better. I am interested in Typescript, Next.js, Deno, Golang, and building consumer apps and developer tools. In my free time, you can see me skating, gaming, exploring, and talking to new people.`,
     cta: [
       {
         text: 'Resume',
