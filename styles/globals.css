@@ -36,9 +36,6 @@ a {
   padding-bottom: 8rem;
 }
 
-.about {
-  padding-top: 0;
-}
 
 .experience {
   margin-top: 8rem;
@@ -58,7 +55,6 @@ a {
   min-height: calc(100vh - 48px);
   display: flex;
   align-items: center;
-  margin-bottom: 4rem;
 }
 
 /*.swiper-container {
