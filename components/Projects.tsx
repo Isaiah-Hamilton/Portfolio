@@ -23,32 +23,44 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {config.projects.map((project: any, i: any) => {
             return (
-              <div
-                className="max-w-md hover:-translate-y-4 transition ease-in-out duration-300"
-                key={i}
-              >
-                <Link href={project.url}>
-                  <a target="_blank" className="block">
-                    <div className="relative w-full h-56">
-                      <Image
-                        src={project.image}
-                        alt={`${project.title} screenshot`}
-                        className="rounded-xl"
-                        width="100%"
-                        height="100%"
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
+              <div key={i}>
+                <motion.div
+                  initial={{ y: 200, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.8,
+                    delay: 0.25 * i,
+                    type: 'spring',
+                    stiffness: 100,
+                    damping: 20,
+                  }}
+                >
+                  <div className="max-w-md hover:-translate-y-4 transition ease-in-out duration-300">
+                    <Link href={project.url}>
+                      <a target="_blank" className="block">
+                        <div className="relative w-full h-56">
+                          <Image
+                            src={project.image}
+                            alt={`${project.title} screenshot`}
+                            className="rounded-xl"
+                            width="100%"
+                            height="100%"
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
 
-                    <div className="p-4">
-                      <h5 className="text-xl font-bold">{project.title}</h5>
-                      <ReactMarkdown className="mt-2 text-gray-500">
-                        {project.description}
-                      </ReactMarkdown>
-                    </div>
-                  </a>
-                </Link>
+                        <div className="p-4">
+                          <h5 className="text-xl font-bold">{project.title}</h5>
+                          <ReactMarkdown className="mt-2 text-gray-500">
+                            {project.description}
+                          </ReactMarkdown>
+                        </div>
+                      </a>
+                    </Link>
+                  </div>
+                </motion.div>
               </div>
             )
           })}
