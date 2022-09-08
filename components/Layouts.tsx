@@ -8,7 +8,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const DefaultLayout = (props: Props) => {
+const Layout = (props: Props) => {
   const { hideHeader = false, hideFooter = false, children } = props
   const [darkMode, setDarkMode] = useState<boolean>(true)
 
@@ -36,4 +36,4 @@ const DefaultLayout = (props: Props) => {
   )
 }
 
-export default DefaultLayout
+export default Layout

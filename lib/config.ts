@@ -105,6 +105,28 @@ const config = {
       url: 'https://www.linkedin.com/in/isaiah-hamilton-093361209/',
     },
   ],
+  links: {
+    image: '/profile.jpg',
+    title: 'Isaiah Hamilton',
+    links: [
+      {
+        title: 'Twitter',
+        url: 'https://twitter.com/isaiah7hamilton',
+      },
+      {
+        title: 'Github',
+        url: 'https://github.com/isaiah-hamilton',
+      },
+      {
+        title: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/isaiah-hamilton-093361209/',
+      },
+      {
+        title: 'Website',
+        url: 'https://isaiah-hamilton.com',
+      },
+    ],
+  },
 }
 
 export default config
