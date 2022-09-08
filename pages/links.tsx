@@ -21,8 +21,8 @@ const links = () => {
         <div className="space-y-6">
           {config.links.links.map((link: any, i: number) => {
             return (
-              <div className="w-fit mx-auto">
-                <Button key={i} link={link.url} externalLink>
+              <div key={i} className="w-fit mx-auto">
+                <Button link={link.url} externalLink>
                   <span>{link.title}</span>
                 </Button>
               </div>
