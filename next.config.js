@@ -18,6 +18,11 @@ module.exports = {
         destination: 'https://twitter.com/isaiah7hamilton',
         permanent: true,
       },
+      {
+        source: '/linkedin',
+        destination: 'https://www.linkedin.com/in/isaiah-hamilton-093361209/',
+        permanent: true,
+      },
     ]
   },
 }
