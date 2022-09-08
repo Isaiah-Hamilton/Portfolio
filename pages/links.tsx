@@ -11,9 +11,9 @@ const links = () => {
           <Image
             className="rounded-full"
             src={config.links.image}
-             width="100%"
-             height="100%"
-             objectFit="cover"
+            width="100%"
+            height="100%"
+            objectFit="cover"
             alt="profile picture"
           />
         </div>
@@ -22,9 +22,9 @@ const links = () => {
           {config.links.links.map((link: any, i: number) => {
             return (
               <div className="w-fit mx-auto">
-              <Button key={i} link={link.url} externalLink>
-                <span>{link.title}</span>
-              </Button>
+                <Button key={i} link={link.url} externalLink>
+                  <span>{link.title}</span>
+                </Button>
               </div>
             )
           })}
