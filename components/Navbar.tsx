@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
 import config from '../lib/config'
-import { GithubIcon } from './Icons/Index'
+import { GithubIcon } from './Icons'
 import { motion } from 'framer-motion'
 
 type Props = {

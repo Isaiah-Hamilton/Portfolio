@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import config from '../lib/config'
-import { HeartIcon } from './Icons/Index'
+import { HeartIcon } from './Icons'
 
 const Footer = () => {
   return (

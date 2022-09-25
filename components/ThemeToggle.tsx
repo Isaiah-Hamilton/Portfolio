@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { SunIcon, MoonIcon } from './Icons/Index'
+import { SunIcon, MoonIcon } from './Icons'
 
 interface Props {
   darkMode: boolean
