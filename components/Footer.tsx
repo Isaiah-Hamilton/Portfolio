@@ -22,7 +22,7 @@ const Footer = () => {
 
       <div className="flex items-center space-x-1 text-xs md:text-sm lg:text-base">
         <span>Code with</span>
-        <HeartIcon />
+        <HeartIcon width={'24'} height={'24'} />
         <span>by</span>
         <Link href={config.github}>
           <a target="_blank">{config.name}</a>
