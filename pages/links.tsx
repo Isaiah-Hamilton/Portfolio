@@ -32,19 +32,18 @@ const links = () => {
               <div className="flex space-x-5">
                 {config.social.map((social: any, i: number) => {
                   return (
-                    <Link href={social.url}>
+                    <Link href={social.url} key={i}>
                       <a target="_blank">
                         <div
-                          key={i}
                           className="p-2.5 rounded-xl"
                           style={{ backgroundColor: social.color }}
                         >
                           <svg width="30" height="30" viewBox="0 0 24 24">
                             <path
                               fill="#FFFFFF"
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d={social.icon}
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             />
                           </svg>
                         </div>

@@ -44,7 +44,7 @@ const globeIcon = (props: Props) => {
 
   return (
     <svg width={width || '32'} height={height || '32'} viewBox="0 0 15 15">
-      <g fill={color || 'currentColor'} fill-rule="evenodd" clip-rule="evenodd">
+      <g fill={color || 'currentColor'} fillRule="evenodd" clipRule="evenodd">
         <path d="M7.5 1.8a5.7 5.7 0 1 0 0 11.4a5.7 5.7 0 0 0 0-11.4ZM.9 7.5a6.6 6.6 0 1 1 13.2 0a6.6 6.6 0 0 1-13.2 0Z" />
         <path d="M13.5 7.9h-12v-.8h12v.8Z" />
         <path d="M7.1 13.5v-12h.8v12h-.8zm3.275-6c0-2.173-.781-4.322-2.313-5.743l.476-.514c1.702 1.58 2.537 3.93 2.537 6.257c0 2.327-.835 4.678-2.537 6.257l-.476-.514c1.532-1.42 2.313-3.57 2.313-5.743zM4 7.5c0-2.324.808-4.673 2.458-6.253l.484.506C5.458 3.173 4.7 5.323 4.7 7.5c0 2.176.758 4.327 2.242 5.747l-.484.506C4.808 12.173 4 9.823 4 7.5z" />
@@ -61,9 +61,9 @@ const HeartIcon = (props: Props) => {
     <svg width={width || '32'} height={height || '32'} viewBox="0 0 15 15">
       <path
         fill={color || '#E94749'}
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M1.352 4.905a3.547 3.547 0 0 1 3.541-3.553c1.365 0 1.968.571 2.607 1.583c.64-1.012 1.242-1.583 2.607-1.583a3.547 3.547 0 0 1 3.54 3.553c0 1.835-1.046 3.6-2.246 5.064c-1.137 1.387-2.48 2.582-3.395 3.397l-.173.155a.5.5 0 0 1-.666 0l-.173-.155c-.916-.815-2.258-2.01-3.395-3.397C2.4 8.505 1.352 6.74 1.352 4.905Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
     </svg>
   )
