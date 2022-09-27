@@ -47,3 +47,7 @@ a {
   display: flex;
   align-items: center;
 }
+
+.card {
+  backdrop-filter: blur(20px);
+}
