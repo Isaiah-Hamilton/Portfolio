@@ -26,7 +26,7 @@ const Hero = () => {
               I&apos;m a {config.role}.
             </div>
             {config.hero.cta.map((cta: { url: string; text: string }, i: number) => (
-              <Button key={i} link={cta.url} externalLink>
+              <Button key={i} link={cta.url}>
                 {cta.text}
               </Button>
             ))}
