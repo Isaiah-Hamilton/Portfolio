@@ -13,7 +13,7 @@ const links = () => {
             <div className="max-w-md mx-auto">
               <div className="w-fit mx-auto">
                 <img
-                  src="https://github.com/isaiah-hamilton.png"
+                  src="https://avatars.githubusercontent.com/u/70828596?v=4"
                   width="100"
                   height="100"
                   alt="profile"
