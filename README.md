@@ -1,6 +1,4 @@
-# Isaiah-Hamilton's Portfolio
-
-This is my personal portfolio website.
+<img src="./public/projects/portfolio.png">
 
 ## Tech Stack
 
