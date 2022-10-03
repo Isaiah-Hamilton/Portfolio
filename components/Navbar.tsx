@@ -45,7 +45,7 @@ const Navbar = (props: Props) => {
           <div className="flex flex-col md:flex-row md:mx-6">
             {config.navbar.items.map((item: any, i: number) => {
               return (
-                <motion.div whileTap={{ scale: 0.9 }} key={i}>
+                <motion.div className="flex items-center" whileTap={{ scale: 0.9 }} key={i}>
                   <Link href={item.url}>
                     <a className="my-1 text-sm font-medium transition-colors duration-200 transform hover:text-blue-600 dark:hover:text-blue-500 md:mx-4 md:my-0 cursor-pointer">
                       {item.text}
