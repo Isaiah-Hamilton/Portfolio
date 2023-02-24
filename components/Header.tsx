@@ -19,7 +19,7 @@ const Header = () => {
       <meta name="twitter:image" content="/projects/portfolio.png" />
       <meta property="og:site_name" content="Isaiah Hamilton | Frontend Developer" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/projects/portfolio.png" />
+      <meta property="og:image" content="https://obuldanrptloktxcffvn.functions.supabase.co/og-images?site=docs&type=auth&title=Login%20with%20Apple&description=Add%20Apple%20OAuth%20to%20your%20Supabase%20project" />
       <title>Isaiah Hamilton | Frontend Developer</title>
     </Head>
   )
