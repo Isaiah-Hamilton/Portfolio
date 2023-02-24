@@ -16,10 +16,10 @@ const Header = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@Isaiah7Hamilton" />
       <meta name="twitter:creator" content="@Isaiah7Hamilton" />
-      <meta name="twitter:image" content="/portfolio.png" />
+      <meta name="twitter:image" content="/projects/portfolio.png" />
       <meta property="og:site_name" content="Isaiah Hamilton | Frontend Developer" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/portfolio.png" />
+      <meta property="og:image" content="/projects/portfolio.png" />
       <title>Isaiah Hamilton | Frontend Developer</title>
     </Head>
   )
