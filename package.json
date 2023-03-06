@@ -18,7 +18,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-markdown": "^8.0.3",
-    "swiper": "^8.1.4",
+    "swiper": "^9.1.0",
     "tailwindcss": "^3.0.8"
   },
   "devDependencies": {
