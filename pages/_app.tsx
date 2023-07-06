@@ -6,7 +6,7 @@ const alexandria = Alexandria({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={alexandria.className}>
+    <main className={`bg-[#e9e8e4] text-[#101418] overflow-x-clip ${alexandria.className}`}>
       <Component {...pageProps} />
     </main >
   )
