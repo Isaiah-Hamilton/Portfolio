@@ -22,10 +22,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Isaiah7Hamilton" />
         <meta name="twitter:creator" content="@Isaiah7Hamilton" />
-        <meta name="twitter:image" content="/projects/portfolio.png" />
+        <meta name="twitter:image" content="/og-image.png" />
         <meta property="og:site_name" content="Isaiah Hamilton | Frontend Developer" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/projects/portfolio.png" />
+        <meta property="og:image" content="/og-image.png" />
         <title>Isaiah Hamilton | Frontend Developer</title>
       </Head>
       <main className={`bg-[#e9e8e4] text-[#101418] overflow-x-clip ${alexandria.className}`}>
