@@ -1,39 +1,56 @@
+import { Footer as footer } from '@/lib/data'
+import { FooterTypes } from '@/lib/types'
+import { Section } from '@/components'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
-import config from '../lib/config'
-import { HeartIcon } from './Icons'
 
-const Footer = () => {
-  return (
-    <div className="flex flex-col items-center justify-between py-4 sm:flex-row -mx-16 px-16 space-y-3 sm:space-y-0">
-      <div className="flex -mx-2 text-xs md:text-sm lg:text-base">
-        {config.footer.map((footer: any, i: number) => {
-          return (
-            <Link href={footer.url} key={i}>
-              <a
-                target="_blank"
-                className="mx-2 text-[#666666] dark:text-gray-300 hover:text-blue-500"
-              >
-                {footer.text}
-              </a>
-            </Link>
-          )
-        })}
+const Footer = () => (
+  <div className='bg-[#dfddd9]'>
+    <Section className='bg-[#dfddd9] pb-4'>
+      <motion.div
+        className='h-[1px] bg-[#101418] rounded-full'
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: '100%' }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.8,
+          ease: [0.86, 0, 0.07, 1]
+        }}
+      />
+      <div className='flex items-center justify-between mt-4'>
+        <motion.div
+          className='text-xs'
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            delay: 0.2,
+            duration: 0.6,
+            ease: [0.86, 0, 0.07, 1]
+          }}
+        >
+          &copy; <Link href="https://github.com/isaiah-hamilton" target='_blank'>Isaiah Hamilton</Link></motion.div>
+        <div className='space-x-4'>
+          {footer.map((item: FooterTypes) => (
+            <motion.div
+              key={item.text}
+              className='inline-block text-xs'
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                delay: 0.2,
+                duration: 0.6,
+                ease: [0.86, 0, 0.07, 1]
+              }}
+            >
+              <Link href={item.url} target='_blank'>{item.text}</Link>
+            </motion.div>
+          ))}
+        </div>
       </div>
-
-      <div className="flex items-center space-x-1 text-xs md:text-sm lg:text-base">
-        <span>Code with</span>
-        <HeartIcon width={'24'} height={'24'} />
-        <span>by</span>
-        <Link href={config.github}>
-          <a target="_blank">{config.name}</a>
-        </Link>
-      </div>
-
-      <p className="text-[#666666] dark:text-gray-300 text-xs md:text-sm lg:text-base">
-        © {new Date().getFullYear()} All rights reserved.
-      </p>
-    </div>
-  )
-}
+    </Section>
+  </div>
+)
 
 export default Footer

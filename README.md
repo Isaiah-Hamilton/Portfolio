@@ -1,8 +1,9 @@
-<img src="./public/projects/portfolio.png">
+# Portfolio Site
 
 ## Tech Stack
 
 - [Next.js](https://nextjs.org/) – framework
+- [Framer Motion](https://www.framer.com/motion) - Animation
 - [Typescript](https://www.typescriptlang.org/) – language
 - [Tailwind](https://tailwindcss.com/) – CSS
 - [Vercel](https://vercel.com/) – hosting
@@ -14,4 +15,12 @@
 
 ## Author
 
+This portfolio website was Design and Coded by the following
+
 - Isaiah Hamilton ([@Isaiah7Hamilton](https://twitter.com/isaiah7hamilton))
+
+## Contributors
+
+<a href="https://github.com/Isaiah-Hamilton/Portfolio/graphs/contributors">
+  <img src="https://contributors.deno.dev/Isaiah-Hamilton/Portfolio" alt="contributors">
+</a>

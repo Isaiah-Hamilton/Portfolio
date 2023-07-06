@@ -1,33 +1,21 @@
-import Link from 'next/link'
-import { motion } from 'framer-motion'
+import Link from "next/link"
 
-interface Props {
-  link: string
-  externalLink?: boolean
+type Props = {
   children: React.ReactNode
   onClick?: () => void
   className?: string
+  disabled?: boolean
+  noStyle?: boolean
+  target?: string
+  link?: string
 }
 
-const Button = (props: Props) => {
-  const { link, children, externalLink, onClick, className } = props
-
+const Button = ({ children, className, onClick, disabled, noStyle, target, link }: Props) => {
+  const buttonCSS = `px-6 py-2 tracking-wide text-[#e9e8e4] capitalize transition-colors duration-300 transform bg-[#212529] hover:bg-[#101418] rounded-lg focus:outline-none focus:ring focus:ring-[#101418] focus:ring-opacity-40 ${className}}`
   return (
-    <motion.div whileTap={{ scale: 0.9 }} className="w-fit">
-      <button
-        className={`inline-flex items-center mt-4 text-sm sm:text-base text-white bg-blue-500 hover:bg-blue-600 rounded-md transition ease-in duration-150 ${className}`}
-        onClick={onClick || (() => {})}
-      >
-        <Link href={link}>
-          <a
-            className="px-4 sm:px-6 py-2 sm:py-3 text-sm"
-            target={externalLink ? '_blank' : undefined}
-          >
-            {children}
-          </a>
-        </Link>
-      </button>
-    </motion.div>
+    <>
+      {link ? (<Link className={!noStyle ? buttonCSS : className} href={link} target={target}>{children}</Link>) : (<button onClick={onClick} disabled={disabled} className={!noStyle ? buttonCSS : className}>{children}</button>)}
+    </>
   )
 }
 

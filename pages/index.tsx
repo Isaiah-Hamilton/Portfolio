@@ -1,24 +1,17 @@
-import Header from '../components/Header'
-import Layout from '../components/Layouts'
-import Hero from '../components/Hero'
-import Projects from '../components/Projects'
-import Contact from '../components/Contact'
-import Experience from '../components/Experience'
-import About from '../components/About'
+import { Hero, FeaturedWork, WorkExperience, Contact, Footer, Navbar } from "@/components"
+import { NextPage } from "next"
 
-const Home = () => {
+const Index: NextPage = () => {
   return (
     <>
-      <Header />
-      <Layout>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </Layout>
+      <Navbar />
+      <Hero />
+      <FeaturedWork />
+      <WorkExperience />
+      <Contact />
+      <Footer />
     </>
   )
 }
 
-export default Home
+export default Index

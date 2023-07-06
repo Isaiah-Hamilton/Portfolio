@@ -1,81 +1,53 @@
-import Link from 'next/link'
-import ThemeToggle from './ThemeToggle'
-import config from '../lib/config'
-import { GithubIcon } from './Icons'
-import { motion } from 'framer-motion'
+import { Button } from "@/components"
+import { NavLinks } from "@/lib/data"
+import { NavLinkTypes } from "@/lib/types"
+import { motion } from "framer-motion"
+import { useState } from "react"
+import Link from "next/link"
 
-type Props = {
-  darkMode: boolean
-  updateTheme: Function
-}
-
-const Navbar = (props: Props) => {
-  const { darkMode, updateTheme } = props
-
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <motion.div
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        delay: 0.5,
-        duration: 0.8,
-        type: 'spring',
-        stiffness: 100,
-        damping: 20,
-      }}
-    >
-      <div className="mx-auto md:flex md:justify-between md:items-center">
-        <div className="flex items-center justify-between">
-          <motion.div whileTap={{ scale: 0.9 }}>
-            <Link href="/">
-              <a className="text-2xl font-semibold transition-colors duration-200 transform flex space-x-2">
-                <div className="text-base text-[#24282D] dark:text-white">{config.name}</div>
-              </a>
+    <nav className="w-full fixed top-0 p-4 sm:px-6 md:px-10 lg:px-20 z-30" style={{ backdropFilter: 'blur(24px)', backgroundColor: '#e9e8e469', opacity: 1 }}>
+      <div className="flex items-center justify-between">
+        <div className="text-lg font-semibold">Isaiah Hamilton</div>
+        <div className="hidden md:flex items-center space-x-6">
+          {NavLinks.map((item: NavLinkTypes) => (
+            <Link key={item.text} href={item.url}>
+              <span>{item.text}</span>
             </Link>
-          </motion.div>
-
-          <div className="flex md:hidden">
-            <div className="flex justify-center md:block">
-              <ThemeToggle darkMode={darkMode} updateTheme={updateTheme} />
-            </div>
-          </div>
+          ))}
         </div>
-
-        <div className="items-center hidden md:flex">
-          <div className="flex flex-col md:flex-row md:mx-6">
-            {config.navbar.items.map((item: any, i: number) => {
-              return (
-                <motion.div className="flex items-center" whileTap={{ scale: 0.9 }} key={i}>
-                  <Link href={item.url}>
-                    <a className="my-1 text-sm font-medium transition-colors duration-200 transform hover:text-blue-600 dark:hover:text-blue-500 md:mx-4 md:my-0 cursor-pointer">
-                      {item.text}
-                    </a>
-                  </Link>
-                </motion.div>
-              )
-            })}
-            {config.repo && (
-              <Link href={config.repo}>
-                <a
-                  target="_blank"
-                  rel="noopener"
-                  className="my-1 text-sm font-medium transition-colors duration-200 transform md:mx-4 md:my-0 cursor-pointer"
-                >
-                  <motion.div whileTap={{ scale: 0.85 }}>
-                    <GithubIcon />
-                  </motion.div>
-                  <span className="sr-only">Github link</span>
-                </a>
-              </Link>
-            )}
-          </div>
-
-          <div className="flex justify-center md:block">
-            <ThemeToggle darkMode={darkMode} updateTheme={updateTheme} />
-          </div>
-        </div>
+        <Button onClick={() => setIsOpen(!isOpen)} noStyle className="block md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+          </svg>
+        </Button>
       </div>
-    </motion.div>
+      <motion.div
+        className="space-y-4 md:hidden"
+        initial={{ height: 0, paddingTop: 0 }}
+        animate={isOpen ? { height: 250, paddingTop: 16 } : { height: 0 }}
+        transition={{ delay: isOpen ? 0 : 0.1, duration: isOpen ? 0.4 : 0.6 }}
+      >
+        {
+          NavLinks.map((item: NavLinkTypes, i: number) => (
+            <motion.div
+              key={item.text}
+              initial={{ opacity: 0, display: 'none' }}
+              animate={isOpen ? { opacity: 1, display: 'block' } : { opacity: 0, display: 'none' }}
+              transition={{ delay: isOpen ? i * 0.1 : (NavLinks.length - i) * 0.1 }}
+            >
+              <Button onClick={() => setIsOpen(false)} noStyle link={item.url}>
+                <div className="p-3 rounded-xl hover:bg-[#e9e8e478] transition">
+                  {item.text}
+                </div>
+              </Button>
+            </motion.div>
+          ))
+        }
+      </motion.div>
+    </nav>
   )
 }
 
