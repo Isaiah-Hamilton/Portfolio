@@ -64,7 +64,7 @@ export const Experience = [
 export const Footer = [
   {
     text: 'Linkedin',
-    url: 'https://www.linkedin.com/in/isaiah-hamilton-093361209/'
+    url: 'https://www.linkedin.com/in/isaiah7hamilton'
   },
   {
     text: 'Twiter',
