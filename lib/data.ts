@@ -33,16 +33,16 @@ export const Projects = [
     bgColor: "#050505",
     textColor: "#ffffff",
   },
-  {
-    title: "Cloneify",
-    description:
-      "Cloneify is a web app that allows users to listen to live air traffic control communications from around the world.",
-    image:
-      "https://framerusercontent.com/images/CWR3GLN69xNxRF87alCvZO3G9ds.jpg",
-    tags: ["UX Research", "UI Design", "Prototyping"],
-    bgColor: "#f6fffa",
-    // textColor: '#101418'
-  },
+  // {
+  //   title: "Cloneify",
+  //   description:
+  //     "Cloneify is a web app that allows users to listen to live air traffic control communications from around the world.",
+  //   image:
+  //     "https://framerusercontent.com/images/CWR3GLN69xNxRF87alCvZO3G9ds.jpg",
+  //   tags: ["UX Research", "UI Design", "Prototyping"],
+  //   bgColor: "#f6fffa",
+  //   textColor: '#101418'
+  // },
 ];
 
 export const Experience = [
