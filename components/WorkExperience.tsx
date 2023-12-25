@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const WorkExperience = () => (
   <Section id='experience' className='relative z-10 overflow-clip'>
-    <h2 className='text-[38px] sm:text-[46px] md:text-[54px] lg:text-[72px] text-left lg:text-center tracking-tight font-semibold mb-10'>Work Experience</h2>
+    <h2 className='text-[38px] sm:text-[46px] md:text-[54px] lg:text-[72px] text-left lg:text-center tracking-tight font-semibold mb-16'>Work Experience</h2>
     <div className='lg:grid lg:grid-cols-10 lg:gap-8'>
       <div className='hidden lg:block lg:col-span-4 xl:col-span-4 space-y-24'>
         {Experience.map((item: ExperienceTypes) => (

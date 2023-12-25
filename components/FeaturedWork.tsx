@@ -16,7 +16,7 @@ const FeaturedWork = () => (
             <p className='sm:w-4/5 md:w-[95%] lg:w-full mt-4 mb-10 font-light text-xs md:text-base'>{item.description}</p>
             <div className='grid grid-cols-2 sm:grid-cols-3 gap-2'>
               {item.tags.map((tag: string) => (
-                <div key={tag} className={`inline-block border-[1px] ${item.textColor ? 'border-[#303030] text-[#ffffffb2]' : 'border-[#8a8a8a99] text-[#222]'} text-center text-sm font-light rounded-full px-3 py-1`}>{tag}</div>
+                <div key={tag} className={`inline-block border-[1px] ${item.textColor ? 'border-[#303030] text-[#ffffffb2]' : 'border-[#8a8a8a99] text-[#222]'} text-center text-xs font-light rounded-full px-3 py-1`}>{tag}</div>
               ))}
             </div>
           </div>
