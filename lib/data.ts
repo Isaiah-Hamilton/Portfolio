@@ -49,7 +49,7 @@ export const Experience = [
   {
     company: "Supabase",
     role: "Frontend Developer",
-    date: "2022 - Present",
+    date: "Jan 2022 - Aug 2023",
     description:
       "Successfully developed and launched  numerous websites for Supabase, ensuring their timely delivery and overall success. Collaborated seamlessly with the design and frontend teams, collectively shaping the features and design of the Supabase Dashobard.",
   },
