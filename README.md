@@ -22,5 +22,5 @@ This portfolio website was Design and Coded by the following
 ## Contributors
 
 <a href="https://github.com/Isaiah-Hamilton/Portfolio/graphs/contributors">
-  <img src="https://contributors.deno.dev/Isaiah-Hamilton/Portfolio" alt="contributors">
+  <img src="https://contributors.deno.dev/Isaiah-Hamilton/Portfolio?height=110" alt="contributors">
 </a>
