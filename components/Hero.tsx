@@ -25,7 +25,7 @@ const Hero = () => {
                   }}
                 >
                   <motion.h1
-                    className='text-[38px] sm:text-[46px] md:text-[54px] lg:text-[72px] xl:text-[88px] md:leading-[1.25em] lg:leading-[6.85rem] tracking-tight font-semibold'
+                    className='text-[38px] sm:text-[46px] md:text-[54px] lg:text-[72px] xl:text-[88px] md:leading-[1em] lg:leading-[1.1em] tracking-tight font-semibold'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
