@@ -12,6 +12,12 @@ export interface ProjectTypes {
   textColor?: string
 }
 
+export interface SkillTypes {
+  skill: string,
+  description: string,
+  icon: string,
+}
+
 export interface ExperienceTypes {
   company: string
   role: string

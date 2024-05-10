@@ -9,6 +9,7 @@ import TrackParallax from './TrackParallax'
 // Sectional Components
 import Hero from './Hero'
 import FeaturedWork from './FeaturedWork'
+import Skills from './Skills'
 import WorkExperience from './WorkExperience'
 import Contact from './Contact'
 import Footer from './Footer'
@@ -30,6 +31,7 @@ export {
   // Sectional Components
   Hero,
   FeaturedWork,
+  Skills,
   WorkExperience,
   Contact,
   Footer,
