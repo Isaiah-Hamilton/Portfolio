@@ -39,5 +39,5 @@ export {
   // Icons
   IconCalendar,
   IconTwitter,
-  IconCopy
+  IconCopy,
 }

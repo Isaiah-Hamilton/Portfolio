@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #e9e8e4;
+  background-color: #e9e8e4;
 }
 
 .track-color {
-    background: linear-gradient(0deg, rgb(255 255 255/0) 0%, hsla(220, 62%, 25%, .5) 8%, hsla(220, 62%, 25%, .5) 85%, rgb(255 255 255/0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(255 255 255/0) 0%,
+    hsla(220, 62%, 25%, 0.5) 8%,
+    hsla(220, 62%, 25%, 0.5) 85%,
+    rgb(255 255 255/0) 100%
+  );
 }

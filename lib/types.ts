@@ -13,9 +13,9 @@ export interface ProjectTypes {
 }
 
 export interface SkillTypes {
-  skill: string,
-  description: string,
-  icon: string,
+  skill: string
+  description: string
+  icon: string
 }
 
 export interface ExperienceTypes {
