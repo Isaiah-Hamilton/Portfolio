@@ -1,9 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Alexandria } from 'next/font/google'
 import Head from 'next/head'
-
-const alexandria = Alexandria({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -28,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="/og-image.png" />
         <title>Isaiah Hamilton | Frontend Developer</title>
       </Head>
-      <main className={`bg-[#e9e8e4] text-[#101418] overflow-x-clip ${alexandria.className}`}>
+      <main className="bg-[#e9e8e4] text-[#101418] overflow-x-clip">
         <Component {...pageProps} />
       </main>
     </>
