@@ -9,7 +9,7 @@ const Expertise = () => (
     </h2>
     <div className="grid lg:grid-cols-2 gap-6">
       {Skills.map((item: SkillTypes) => (
-        <div className="flex items-start p-6 rounded-3xl bg-[#DFDDD9]">
+        <div key={item.skill} className="flex items-start p-6 rounded-3xl bg-[#DFDDD9]">
           <div className="mr-4 mt-0.5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
